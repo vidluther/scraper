@@ -1,4 +1,5 @@
 # Steps to get the Scraper Working
+This is pretty much a rehash of instructions on https://github.com/sangaline/wayback-machine-scraper
 
 ## Prep 
 

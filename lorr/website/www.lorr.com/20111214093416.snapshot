@@ -1,0 +1,125 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta name="rating" content="general" />
+<meta name="robots" content="index,follow" />
+<meta name="revisit-after" content="4 weeks" />
+<meta name="author" content="Wordsmith Studios" />
+<meta name="language" content="English" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Language" content="en-us" />
+<link rel="shortcut icon" href="http://www.lorr.com/puzzle.ico" />
+<meta name="copyright" content="Copyright © 2008 LORR" />
+<title>LORR - Law & Order Record Retrieval and Litigation Support - home</title>
+<meta name="description" content="LORR provides law firms and insurers with prompt, dependable, and cost-effective services - including record retrieval, court reporting, videography and photography, digital document management, trial presentations, and courtroom support - in cases throughout Texas." />
+<meta name="keywords" content="litigation support, graphics, litigation consulting, litigation technology , Law and Order, Law & Order, Texas, San Antonio, Dallas, Houston, record retrieval, process service, citation service, subpoena service, court reporting, video editing, document management, presentations, investigation, discovery, legal resources, online resources, research, free online resources" />
+<link rel=stylesheet href="lorr1.css" type="text/css">
+</head>
+<body>
+
+<div id="container">
+
+<div id=flashbanner>
+<object
+  classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,79,0"
+  id="homebanner"
+  width="770" height="136"
+>
+  <param name="movie" value="homebanner.swf">
+  <param name="bgcolor" value="#FFFFFF">
+  <param name="quality" value="high">
+  <param name="allowscriptaccess" value="samedomain">
+  <embed
+    type="application/x-shockwave-flash"
+    pluginspage="http://www.macromedia.com/go/getflashplayer"
+    name="homebanner"
+    width="770" height="136"
+    src="homebanner.swf"
+    bgcolor="#FFFFFF"
+    quality="high"
+    swliveconnect="true"
+    allowscriptaccess="samedomain"
+  >
+    <noembed>
+    </noembed>
+  </embed>
+</object>
+</div>
+
+<div id=link-record>
+<a href="http://www.lorr.com/records.html"><img src="link-record.jpg" width="220" height="50" border="0" alt="Record Retrieval"></a>
+</div>
+<div id=link-reporting>
+<a href="http://www.lorr.com/reporting.html"><img src="link-reporting.jpg" width="220" height="50" border="0" alt="Court Reporting"></a>
+</div>
+<div id=link-process>
+<a href="http://www.lorr.com/process.html"><img src="link-process.jpg" width="220" height="50" border="0" alt="Process Service"></a>
+</div>
+<div id=link-video>
+<a href="http://www.lorr.com/video.html"><img src="link-video.jpg" width="220" height="50" border="0" alt="Videography and Photography"></a>
+</div>
+<div id=link-document>
+<a href="http://www.lorr.com/documents.html"><img src="link-document.jpg" width="220" height="50" border="0" alt="Online Repository"></a>
+</div>
+<div id=link-presentations>
+<a href="http://www.lorr.com/presentations.html"><img src="link-presentations.jpg" width="220" height="50" border="0" alt="Presentations and Exhibits"></a>
+</div>
+<div id=link-courtroom>
+<a href="http://www.lorr.com/playback.html"><img src="link-courtroom.jpg" width="220" height="50" border="0" alt="Courtroom Playback"></a>
+</div>
+
+<div id=adobereader>
+<a href="http://www.adobe.com/products/reader"><img src="adobereader.gif" width="112" height="33" border="0" alt="Adobe Reader"></a></div>
+<div id=etran>
+<a href="http://www.reallegal.com/download.asp"><img src="etranscript.gif" width="112" height="47" border="0" alt="E-Transcript Reader"></a></div>
+<div id=windtricity>
+<a href="http://www.windtricity.com"><img src="windtricity.jpg" width="75" height="90" border="0" alt="Windtricity Energy"></a></div>
+
+
+<div id=text>
+<h1>You solve the puzzle. We gather the pieces.</h1>
+
+<a href="http://www.lorr.com/resources.html"><img src="resources.gif" width="150" height="165" border="0" alt="Free Online Legal Resources" class="floatRight"></a>
+<p>Law & Order Record Retrieval and Litigation Support provides law firms and insurers with prompt, dependable, cost-effective services in cases throughout Texas. Call us when a claim or suit is filed, and we'll support you all the way to settlement or trial.</p>
+
+<ul class="ResourceList">
+<p><li>LORR supports your investigation with photographers and videographers to document site inspections, chronicle injuries and recovery, and create day-in-the-life videos.</li></p>
+
+<p><li>LORR supports your discovery by obtaining medical, business, and federal, state, and municipal agency records, then delivering them to you in print or digital format. We'll provide court reporters and videographers for depositions. Plus, we can scan your records and exhibits to make them securely accessible 24/7 via the Internet.</li></p>
+
+<p><li>LORR supports you at trial by preparing multimedia presentations, digital exhibit databases, and trial boards, and by serving witnesses with subpoenas. We also provide courtroom playback, dealing with the technology while you concentrate on your case.</li></p>
+
+<p><li>LORR supports your research with our free online resources.</li></p>
+</ul>
+
+<p>Whether you're an attorney, staff, or adjuster, Plaintiff or Defendant, let LORR gather the pieces of your case.</p>
+</div>
+
+<div id=subhome>
+<br>
+<a href="http://www.lorr.com">Home</a>
+ · <a href="http://www.lorr.com/company.html">The Company</a>
+ · <a href="http://www.lorr.com/services.html">Services</a>
+ · <a href="http://www.lorr.com/resources.html">Resources</a>
+ · <a href="http://www.lorr.com/contact.html">Contact Us</a><br>
+
+<a href="http://www.lorr.com/records.html">Record Retrieval</a>
+ · <a href="http://www.lorr.com/reporting.html">Court Reporting</a>
+ · <a href="http://www.lorr.com/process.html">Process Service</a>
+ · <a href="http://www.lorr.com/video.html">Video Services</a>
+ · <a href="http://www.lorr.com/documents.html">Online Repository</a>
+ · <a href="http://www.lorr.com/presentations.html">Presentations</a>
+ · <a href="http://www.lorr.com/playback.html">Playback</a><br>
+
+<br>
+Copyright 2008, 2011 Law & Order Record Retrieval, Inc. All rights reserved.<br>
+Offices in San Antonio, Dallas, and Houston.<br>
+<br>
+<br>
+</div>
+
+
+</div>
+</body>
+</html>

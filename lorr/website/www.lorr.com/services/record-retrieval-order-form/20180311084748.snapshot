@@ -1,0 +1,484 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Record Retrieval Order Form</title>
+<meta name='keywords' content='Law &amp; Order Record Retrieval and Online Repository' />
+<meta name='description' content='Law &amp; Order Record Retrieval specializes in Texas litigation support services in San Antonio, Houston, Dallas, Austin, &amp; Corpus Christi.' />
+<link rel='canonical' href='http://www.lorr.com/services/record-retrieval-order-form/' />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Francois+One|Open+Sans+Condensed:700' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="http://www.lorr.com/?css=includes/screen.v.1516747615" type="text/css" />
+<link rel="stylesheet" href="http://www.lorr.com/?css=includes/responsive-screen.v.1495229964" type="text/css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/js/jquery.cycle.min.js"></script>  
+<script src="/js/mobile-nav-script.js"></script>  
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34252874-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+		<script src="/js/jquery.validate.min.js"></script>
+		<script type="text/javascript">
+				var clicked = false;
+			  // window.onbeforeunload = function(event) {
+			  // 	if(clicked == false){
+				 //  	return "If you leave this page all form fields will be lost.";
+			  // 	}
+			  // };
+			// $(document).ready(function(event){
+
+			// 	// Test if submission is the form
+			// 	$('.submit').on('click',function(){
+			// 		clicked = true;
+			// 	});
+
+				//Validation
+				// $('#order_retrieval_form').validate({
+				// 	invalidHandler: function(event, validator){
+				// 		clicked = false;
+				// 	}
+				// });
+
+			// 	//Add More Attorneys
+			// 	$('#another_attorney').on('click',function(){
+			// 		var row = $('#attorneys').find('div:last').find('input.div_row').val();
+			// 		//console.log(row);
+			// 		$('#attorneys').append('<div class="form_area"><h5>Additional Attorney of Record</h5><table><tr><td class="left_td">Attorney</td><td><input type="hidden" name="other_attorney[]" class="div_row" value="" /><input type="text" name="other_attorney[]" /></td><td class="left_td">Telephone</td><td><input type="text" name="other_attorney[]" /></td></tr><tr><td class="left_td">Firm</td><td><input type="text" name="other_attorney[]" /></td><td class="left_td">Fax</td><td><input type="text" name="other_attorney[]" /></td></tr><tr><td class="left_td">Address</td><td><input type="text" name="other_attorney[]" /></td><td class="left_td">Representing</td><td><input type="text" name="other_attorney[]" /><input type="hidden" name="other_attorney[]" value=" " /></td></tr><tr><td class="left_td">Email</td><td><input type="text" name="other_attorney[]" tabindex="36" /></td><td class="left_td">&nbsp;</td><td><input type="hidden" name="other_attorney[]" value=" " /></td></tr></table></div>');
+			// 		var next = parseInt(row) + 1;
+			// 		$('#attorneys').find('div:last').find('input.div_row').val(next);
+			// 		return false;
+			// 	});
+
+			// 	//Add More Custodians
+			// 	$('#another_custodian').on('click',function(){
+			// 		var row = $('#custodian_table').find('tr:last').find('input.tr_row').val();
+			// 		$('#custodian_table').append('<tr><td><input type="hidden" name="custodians[]" class="tr_row" value="" /><input type="text" name="custodians[]" /></td><td><input type="text" name="custodians[]" /></td><td><input type="text" name="custodians[]" /><input type="hidden" name="custodians[]" value=" " /></td></tr>');
+			// 		var next = parseInt(row) + 1;
+			// 		$('#custodian_table').find('tr:last').find('input.tr_row').val(next);
+			// 		return false;
+			// 	});
+
+			// 	// Plantiff Info
+			// 	$('.previous_record').on('click',function(){
+			// 		if($(this).val() == 'Is Add-On Case'){
+			// 			$(this).closest('p').next().show();
+			// 		}else{
+			// 			$(this).closest('p').next().hide();
+			// 		}
+			// 	});
+
+			// 	// Plantiff Info
+			// 	$('#other_type').on('click',function(){
+			// 		if($(this).is(':checked')){
+			// 			$(this).closest('li').next().show();
+			// 		}else{
+			// 			$(this).closest('li').next().hide();
+			// 		}
+			// 	});
+
+			// 	// Datepicker
+			// 	$('.datepicker').datepicker();
+
+			// 	// Return to Input
+			// 	$('#record_form').on('keypress',function(e){
+			// 		var nextTab = parseInt($(this).find(':focus').attr('tabindex')) + 1;
+			// 		var nextElement = $('[tabindex="' + nextTab + '"]');
+			// 		if($(this).find(':focus').attr('class') != 'submit'){
+			// 			if(e.keyCode == 13){
+			// 		    	if(nextElement.length ){
+			// 		    		nextElement.focus();
+			// 		    	}else{
+			// 		    		$('input[tabindex="1"]').focus();
+			// 		    	}
+			// 				return false;
+			// 			}
+			// 		}
+			// 	});
+			// });
+			$(document).ready(function() {
+
+				 $(document).on('submit','form#record_retrieval_order_form' , function(){
+	                if ($(this).valid()) {
+	                    return true;
+	                } else {
+	                    return false;
+	                }
+	            });
+
+				$('<a href="javascript:;" id="attorneys">Additional Attorneys Of Record</a>').insertAfter($('#forms_field_50'));
+				$('<a href="javascript:;" id="custodians">Add more Custodians</a>').insertAfter($('#forms_field_83'));
+				$(document).on('click', '#attorneys', function() {
+					if($('#forms_field_58').css('display') == 'none')
+					{
+						$('#forms_field_58').css('display', 'block');
+						$('#attorneys').remove();
+						$('<a href="javascript:;" id="attorneys">Additional Attorneys Of Record</a>').insertAfter('#forms_field_58');
+						$('<h5>Additional Attorney of Record</h5>').insertAfter('#forms_field_50');
+
+					}
+					else
+					{
+						$('#forms_field_66').css('display', 'block');
+						$('<h5>Additional Attorney of Record</h5>').insertAfter('#forms_field_58');
+						$('#attorneys').remove();
+					}
+				});
+				function showCustodians(ele) {
+					if ($(ele).is(':visible')){
+						$('#custodians').remove();
+						showCustodians($(ele).next());
+					} else {
+						$(ele).css('display' , 'block');
+						$('#custodians').remove();
+						$('<a href="javascript:;" id="custodians">Add more Custodians</a>').insertAfter($(ele));
+					}
+				}
+				$(document).on('click', '#custodians', function() {
+					showCustodians($('#forms_field_87'));
+					// if($('#forms_field_87').css('display') == 'none')
+					// {
+					// 	$('#forms_field_87').css('display', 'block');
+					// 	$('#custodians').remove();
+					// 	$('<a href="javascript:;" id="custodians">Add more Custodians</a>').insertAfter('#forms_field_87');
+					// }
+					// else if($('#forms_field_91').css('display') == 'none')
+					// {
+					// 	$('#forms_field_91').css('display', 'block');
+					// 	$('#custodians').remove();
+					// 	$('<a href="javascript:;" id="custodians">Add more Custodians</a>').insertAfter('#forms_field_91');
+					// }
+					// else if($('#forms_field_109').css('display') == 'none')
+					// {
+					// 	$('#forms_field_109').css('display', 'block');
+					// 	$('#custodians').remove();
+					// 	$('<a href="javascript:;" id="custodians">Add more Custodians</a>').insertAfter('#forms_field_109');
+					// }
+					// else if($('#forms_field_113').css('display') == 'none')
+					// {
+					// 	$('#forms_field_113').css('display', 'block');
+					// 	$('#custodians').remove();
+					// }
+				});
+			});
+		</script>
+		<!--[if lt IE 7]>
+		<script>
+			$(document).ready(function(){
+				$('#record_form').html('<p>Your browser is not supported for this form. Please update to a more modern browser like Firefox or Chrome.</p>');
+			});
+		</script>
+		<![endif]-->
+	</head>
+	<body>
+    
+    
+		<div id="wrapper">
+			<div class="one-edge-shadow" id="header_wrapper">
+	<div id="header">
+		<div id="header_logo">
+			<a href="http://www.lorr.com/"><img src="/images/site/header_logo.png" alt="Law &amp; Order Records and Support" /></a>
+		</div>
+		<div id="header_repository">
+			<a href="http://www.lorr.com/services/record-retrieval-order-form"><img src="/images/site/btn_recordretrieval.png" alt="Record Retrieval" /></a>
+			<a href="https://lorr.egnyte.com/" onclick="window.open (this.href); return false;"><img src="/images/site/header_btn.png" alt="Online Repository" /></a>
+		</div>
+		<div id="header_contact">
+		<p>	Tel: <a href="tel:8007369105" style="color:#736A5D;">(800) 736-9105</a>  Fax: (800) 335-4002 </p><!-- <a href="tel:8007369105"><img src="/images/site/header_ph_number.png" alt="1-800-736-9105" /></a> -->
+		</div>
+		<div id="navigation">
+			<ul>
+				<li><a href="/the-company" id="nav1">The Company</a></li>
+				<li><a href="/services" id="nav2" class="active">Services</a></li>
+				<li><a href="/resources" id="nav3">Resources</a></li>
+				<li><a href="/legal-support-news" id="nav4">News</a></li>
+				<li><a href="/contact" id="nav5">Contact</a></li>
+			</ul>
+		</div>
+		<div class="nav-mobile">
+		    <a class="btn-nav" href="javascript:;"><span></span></a>
+		    <div class="nav-mobile-content">
+		        <ul>
+		            <li><a href="/the-company" >The Company</a></li>
+		            <li><a href="/services"  class="active">Services</a></li>
+		            <li><a href="/resources" >Resources</a></li>
+		            <li><a href="/legal-support-news" >News</a></li>
+		            <li><a href="/contact" >Contact</a></li>
+		            <li><a href="http://www.lorr.com/services/record-retrieval-order-form"  class="active">Record Retrieval Order Form</a></li>
+		            <li><a href="https://lorr.egnyte.com/" onclick="window.open (this.href); return false;">Online Repository</a></li>
+		        </ul>
+		    </div>
+		</div>
+	</div>
+</div>
+<div id="header_shadow">
+	
+</div>
+	
+			<div id="content">
+				<div id="main_content">
+					<h1><strong>Record Retrieval Order Form</strong></h1>
+					<div class="main_content_body inner-d-form">
+						
+						<p>If you would like to auto-fill this form in the future, you may <a href="/account/register/">register</a> for an account. If you already have an account you can <a href="/account/login/">login</a> here to auto-fill your data.</p>
+						
+						<div class="form_area">
+							<script type="text/javascript" src="//www.lorr.com/themes/user/forms/legacy/forms_base.js"></script><form id="record_retrieval_order_form" class=" record_retrieval_order_form" method="post" action=" "  enctype="multipart/form-data" >
+<div class='hiddenFields'>
+<input type="hidden" name="ACT" value="49" />
+<input type="hidden" name="FDATA" value="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" />
+<input type="hidden" name="site_id" value="1" />
+<input type="hidden" name="csrf_token" value="f79f6d2da1cd727e6e0dca20adae8b260e8cd3f0" />
+</div>
+
+<div class="dform"><div class="dform_element dform_radio dftop_label field_new_case_order dform_required" id="forms_field_6" style=""><label class="dform_label" for="ddform_6">Is this a new case order for LORR <span class="req">*</span></label><div class="dform_container"><ul class="radios"><li><label for="fields[6]-0"><input type="radio" name="fields[6]" value="Yes"  class=" required validate[required] " id="fields[6]-0"  />&nbsp; Yes</label></li><li><label for="fields[6]-1"><input type="radio" name="fields[6]" value="No" checked="checked"  class=" required validate[required] " id="fields[6]-1"  />&nbsp; No</label></li></ul></div></div><div class="dform_element dform_radio dftop_label field_case_order_previously_worked dform_required" id="forms_field_7" style=""><label class="dform_label" for="ddform_7">Is this an Add-On Case Order previously worked on by LORR <span class="req">*</span></label><div class="dform_container"><ul class="radios"><li><label for="fields[7]-0"><input type="radio" name="fields[7]" value="Yes"  class=" required validate[required] " id="fields[7]-0"  />&nbsp; Yes</label></li><li><label for="fields[7]-1"><input type="radio" name="fields[7]" value="No" checked="checked"  class=" required validate[required] " id="fields[7]-1"  />&nbsp; No</label></li></ul></div></div><div class="dform_element dform_phone dftop_label field_phone " id="forms_field_117" style=""><label class="dform_label" for="ddform_117">Phone</label><div class="dform_container"><div class="dfinput_phones"><div class="dfinput_left phone_area"><input type="tel" name="fields[117][area]" value="" class="text" id="ddform_117_area"  /><label for="ddform_117_area">Area Code</label></div><div class="dfinput_left phone_number"><input type="tel" name="fields[117][phone_number]" value="" class="text" id="ddform_117_number"  /><label for="ddform_117_number">Phone Number</label></div><br clear="all"></div></div></div><div class="dform_element dform_html field_untitled " id="forms_field_8" style=""><label class="dform_label" for="ddform_8">Untitled</label><div class="dform_container">General Information</div></div><div class="dform_element dform_columns_2 dftop_label field_columns_2 " id="forms_field_9" style=""><div class="dform_container"><div class="dfcolumns"><div class="column composer-sortable" data-number="1" style="width:50%"><div class="dform_element dform_text_input dftop_label field_ordered_by " id="forms_field_10" style=""><label class="dform_label" for="ddform_10">Ordered by</label><div class="dform_container"><input type="text" name="fields[10]" value="" class="text " id="ddform_10" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_email dftop_label field_email dform_required" id="forms_field_11" style=""><label class="dform_label" for="ddform_11">Email Address <span class="req">*</span></label><div class="dform_container"><input type="email" name="fields[11]" value="" class="text  required validate[required,custom[email]] " id="ddform_11" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_date dftop_label field_date_ordered " id="forms_field_12" style=""><label class="dform_label" for="ddform_12">Date Ordered</label><div class="dform_container"><input type="text" name="fields[12]" value="" class="text  formsfdatepicker " id="ddform_12"  />
+			<script type='text/javascript'>
+			$(function() {
+				jQuery('#forms_field_12 input.formsfdatepicker').datepicker({dateFormat:'mm/dd/yy'});
+			});
+			</script></div></div><div class="dform_element dform_date dftop_label field_desposition_date " id="forms_field_13" style=""><label class="dform_label" for="ddform_13">Deposition Date</label><div class="dform_container"><input type="text" name="fields[13]" value="" class="text  formsfdatepicker " id="ddform_13"  />
+			<script type='text/javascript'>
+			$(function() {
+				jQuery('#forms_field_13 input.formsfdatepicker').datepicker({dateFormat:'mm/dd/yy'});
+			});
+			</script></div></div><div class="dform_element dform_date dftop_label field_trial_date " id="forms_field_14" style=""><label class="dform_label" for="ddform_14">Trial Date</label><div class="dform_container"><input type="text" name="fields[14]" value="" class="text  formsfdatepicker " id="ddform_14"  />
+			<script type='text/javascript'>
+			$(function() {
+				jQuery('#forms_field_14 input.formsfdatepicker').datepicker({dateFormat:'mm/dd/yy'});
+			});
+			</script></div></div><div class="dform_element dform_text_input dftop_label field_claim_file_no " id="forms_field_15" style=""><label class="dform_label" for="ddform_15">Claim/File no.</label><div class="dform_container"><input type="text" name="fields[15]" value="" class="text " id="ddform_15" placeholder="" data-placeholder=""  /></div></div></div><div class="column column-last composer-sortable" data-number="2" style="width:50%"><div class="dform_element dform_text_input dftop_label field_cause " id="forms_field_16" style=""><label class="dform_label" for="ddform_16">Cause #</label><div class="dform_container"><input type="text" name="fields[16]" value="" class="text " id="ddform_16" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_court_type " id="forms_field_17" style=""><label class="dform_label" for="ddform_17">Court Type</label><div class="dform_container"><input type="text" name="fields[17]" value="" class="text " id="ddform_17" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_district " id="forms_field_18" style=""><label class="dform_label" for="ddform_18">District #</label><div class="dform_container"><input type="text" name="fields[18]" value="" class="text " id="ddform_18" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_country_court " id="forms_field_19" style=""><label class="dform_label" for="ddform_19">County Court #</label><div class="dform_container"><input type="text" name="fields[19]" value="" class="text " id="ddform_19" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_country_of " id="forms_field_20" style=""><label class="dform_label" for="ddform_20">County of</label><div class="dform_container"><input type="text" name="fields[20]" value="" class="text " id="ddform_20" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_style_of_case " id="forms_field_21" style=""><label class="dform_label" for="ddform_21">Style of Case</label><div class="dform_container"><input type="text" name="fields[21]" value="" class="text " id="ddform_21" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_vs " id="forms_field_22" style=""><label class="dform_label" for="ddform_22">vs.</label><div class="dform_container"><input type="text" name="fields[22]" value="" class="text " id="ddform_22" placeholder="" data-placeholder=""  /></div></div></div><br clear="all"></div></div></div><div class="dform_element dform_html field_untitled " id="forms_field_23" style=""><label class="dform_label" for="ddform_23">Untitled</label><div class="dform_container">Ordering Attorney</div></div><div class="dform_element dform_columns_2 dftop_label field_columns_2 " id="forms_field_24" style=""><div class="dform_container"><div class="dfcolumns"><div class="column composer-sortable" data-number="1" style="width:50%"><div class="dform_element dform_text_input dftop_label field_oa_name " id="forms_field_25" style=""><label class="dform_label" for="ddform_25">Name</label><div class="dform_container"><input type="text" name="fields[25]" value="" class="text " id="ddform_25" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_email dftop_label field_oa_email_address " id="forms_field_26" style=""><label class="dform_label" for="ddform_26">Email Address</label><div class="dform_container"><input type="email" name="fields[26]" value="" class="text validate[custom[email]] " id="ddform_26" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_represents " id="forms_field_27" style=""><label class="dform_label" for="ddform_27">Represents</label><div class="dform_container"><input type="text" name="fields[27]" value="" class="text " id="ddform_27" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_oa_bar " id="forms_field_28" style=""><label class="dform_label" for="ddform_28">Bar #</label><div class="dform_container"><input type="text" name="fields[28]" value="" class="text " id="ddform_28" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_oa_firm " id="forms_field_29" style=""><label class="dform_label" for="ddform_29">Firm</label><div class="dform_container"><input type="text" name="fields[29]" value="" class="text " id="ddform_29" placeholder="" data-placeholder=""  /></div></div></div><div class="column column-last composer-sortable" data-number="2" style="width:50%"><div class="dform_element dform_text_input dftop_label field_oa_address " id="forms_field_30" style=""><label class="dform_label" for="ddform_30">Address</label><div class="dform_container"><input type="text" name="fields[30]" value="" class="text " id="ddform_30" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_oa_city " id="forms_field_31" style=""><label class="dform_label" for="ddform_31">City</label><div class="dform_container"><input type="text" name="fields[31]" value="" class="text " id="ddform_31" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_select dftop_label field_oa_state " id="forms_field_32" style=""><label class="dform_label" for="ddform_32">State</label><div class="dform_container"><select name="fields[32]"  class="" id="ddform_32" >
+<option value="AL">Alabama</option>
+<option value="AK">Alaska</option>
+<option value="AZ">Arizona</option>
+<option value="AR">Arkansas</option>
+<option value="CA">California</option>
+<option value="CO">Colorado</option>
+<option value="CT">Connecticut</option>
+<option value="DE">Delaware</option>
+<option value="DC">Dist of Columbia</option>
+<option value="FL">Florida</option>
+<option value="GA">Georgia</option>
+<option value="HI">Hawaii</option>
+<option value="ID">Idaho</option>
+<option value="IL">Illinois</option>
+<option value="IN">Indiana</option>
+<option value="IA">Iowa</option>
+<option value="KS">Kansas</option>
+<option value="KY">Kentucky</option>
+<option value="LA">Louisiana</option>
+<option value="ME">Maine</option>
+<option value="MD">Maryland</option>
+<option value="MA">Massachusetts</option>
+<option value="MI">Michigan</option>
+<option value="MN">Minnesota</option>
+<option value="MS">Mississippi</option>
+<option value="MO">Missouri</option>
+<option value="MT">Montana</option>
+<option value="NE">Nebraska</option>
+<option value="NV">Nevada</option>
+<option value="NH">New Hampshire</option>
+<option value="NJ">New Jersey</option>
+<option value="NM">New Mexico</option>
+<option value="NY">New York</option>
+<option value="NC">North Carolina</option>
+<option value="ND">North Dakota</option>
+<option value="OH">Ohio</option>
+<option value="OK">Oklahoma</option>
+<option value="OR">Oregon</option>
+<option value="PA">Pennsylvania</option>
+<option value="RI">Rhode Island</option>
+<option value="SC">South Carolina</option>
+<option value="SD">South Dakota</option>
+<option value="TN">Tennessee</option>
+<option value="TX">Texas</option>
+<option value="UT">Utah</option>
+<option value="VT">Vermont</option>
+<option value="VA">Virginia</option>
+<option value="WA">Washington</option>
+<option value="WV">West Virginia</option>
+<option value="WI">Wisconsin</option>
+<option value="WY">Wyoming</option>
+</select></div></div><div class="dform_element dform_text_input dftop_label field_oa_zipcode " id="forms_field_33" style=""><label class="dform_label" for="ddform_33">Zip Code</label><div class="dform_container"><input type="text" name="fields[33]" value="" class="text " id="ddform_33" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_phone dftop_label field_oa_telephone " id="forms_field_34" style=""><label class="dform_label" for="ddform_34">Telephone</label><div class="dform_container"><div class="dfinput_phones"><div class="dfinput_left phone_number"><input type="tel" name="fields[34][phone_number]" value="" class="text" id="ddform_34_number"  /><label for="ddform_34_number">Phone Number</label></div><br clear="all"></div></div></div><div class="dform_element dform_text_input dftop_label field_oa_fax " id="forms_field_35" style=""><label class="dform_label" for="ddform_35">Fax</label><div class="dform_container"><input type="text" name="fields[35]" value="" class="text " id="ddform_35" placeholder="" data-placeholder=""  /></div></div></div><br clear="all"></div></div></div><div class="dform_element dform_html field_untitled " id="forms_field_36" style=""><label class="dform_label" for="ddform_36">Untitled</label><div class="dform_container">Billing Information</div></div><div class="dform_element dform_columns_2 dftop_label field_columns_2 " id="forms_field_37" style=""><div class="dform_container"><div class="dfcolumns"><div class="column composer-sortable" data-number="1" style="width:50%"><div class="dform_element dform_text_input dftop_label field_bi_name " id="forms_field_38" style=""><label class="dform_label" for="ddform_38">Name</label><div class="dform_container"><input type="text" name="fields[38]" value="" class="text " id="ddform_38" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_bi_company " id="forms_field_39" style=""><label class="dform_label" for="ddform_39">Company</label><div class="dform_container"><input type="text" name="fields[39]" value="" class="text " id="ddform_39" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_email dftop_label field_bi_email_address " id="forms_field_40" style=""><label class="dform_label" for="ddform_40">Email Address</label><div class="dform_container"><input type="email" name="fields[40]" value="" class="text validate[custom[email]] " id="ddform_40" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_phone dftop_label field_bi_telephone " id="forms_field_41" style=""><label class="dform_label" for="ddform_41">Telephone</label><div class="dform_container"><div class="dfinput_phones"><div class="dfinput_left phone_number"><input type="tel" name="fields[41][phone_number]" value="" class="text" id="ddform_41_number"  /><label for="ddform_41_number">Phone Number</label></div><br clear="all"></div></div></div><div class="dform_element dform_date dftop_label field_bi_date_of_loss " id="forms_field_42" style=""><label class="dform_label" for="ddform_42">Date of Loss</label><div class="dform_container"><input type="text" name="fields[42]" value="" class="text  formsfdatepicker " id="ddform_42"  />
+			<script type='text/javascript'>
+			$(function() {
+				jQuery('#forms_field_42 input.formsfdatepicker').datepicker({dateFormat:'mm/dd/yy'});
+			});
+			</script></div></div><div class="dform_element dform_text_input dftop_label field_bi_client_file_no " id="forms_field_43" style=""><label class="dform_label" for="ddform_43">Client File No</label><div class="dform_container"><input type="text" name="fields[43]" value="" class="text " id="ddform_43" placeholder="" data-placeholder=""  /></div></div></div><div class="column column-last composer-sortable" data-number="2" style="width:50%"><div class="dform_element dform_text_input dftop_label field_bi_address " id="forms_field_44" style=""><label class="dform_label" for="ddform_44">Address</label><div class="dform_container"><input type="text" name="fields[44]" value="" class="text " id="ddform_44" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_bi_city " id="forms_field_45" style=""><label class="dform_label" for="ddform_45">City</label><div class="dform_container"><input type="text" name="fields[45]" value="" class="text " id="ddform_45" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_select dftop_label field_bi_state " id="forms_field_46" style=""><label class="dform_label" for="ddform_46">State</label><div class="dform_container"><select name="fields[46]"  class="" id="ddform_46" >
+<option value="AL">Alabama</option>
+<option value="AK">Alaska</option>
+<option value="AZ">Arizona</option>
+<option value="AR">Arkansas</option>
+<option value="CA">California</option>
+<option value="CO">Colorado</option>
+<option value="CT">Connecticut</option>
+<option value="DE">Delaware</option>
+<option value="DC">Dist of Columbia</option>
+<option value="FL">Florida</option>
+<option value="GA">Georgia</option>
+<option value="HI">Hawaii</option>
+<option value="ID">Idaho</option>
+<option value="IL">Illinois</option>
+<option value="IN">Indiana</option>
+<option value="IA">Iowa</option>
+<option value="KS">Kansas</option>
+<option value="KY">Kentucky</option>
+<option value="LA">Louisiana</option>
+<option value="ME">Maine</option>
+<option value="MD">Maryland</option>
+<option value="MA">Massachusetts</option>
+<option value="MI">Michigan</option>
+<option value="MN">Minnesota</option>
+<option value="MS">Mississippi</option>
+<option value="MO">Missouri</option>
+<option value="MT">Montana</option>
+<option value="NE">Nebraska</option>
+<option value="NV">Nevada</option>
+<option value="NH">New Hampshire</option>
+<option value="NJ">New Jersey</option>
+<option value="NM">New Mexico</option>
+<option value="NY">New York</option>
+<option value="NC">North Carolina</option>
+<option value="ND">North Dakota</option>
+<option value="OH">Ohio</option>
+<option value="OK">Oklahoma</option>
+<option value="OR">Oregon</option>
+<option value="PA">Pennsylvania</option>
+<option value="RI">Rhode Island</option>
+<option value="SC">South Carolina</option>
+<option value="SD">South Dakota</option>
+<option value="TN">Tennessee</option>
+<option value="TX">Texas</option>
+<option value="UT">Utah</option>
+<option value="VT">Vermont</option>
+<option value="VA">Virginia</option>
+<option value="WA">Washington</option>
+<option value="WV">West Virginia</option>
+<option value="WI">Wisconsin</option>
+<option value="WY">Wyoming</option>
+</select></div></div><div class="dform_element dform_text_input dftop_label field_bi_zip_code " id="forms_field_47" style=""><label class="dform_label" for="ddform_47">Zip Code</label><div class="dform_container"><input type="text" name="fields[47]" value="" class="text " id="ddform_47" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_bi_claim_no " id="forms_field_48" style=""><label class="dform_label" for="ddform_48">Claim No</label><div class="dform_container"><input type="text" name="fields[48]" value="" class="text " id="ddform_48" placeholder="" data-placeholder=""  /></div></div></div><br clear="all"></div></div></div><div class="dform_element dform_html field_untitled " id="forms_field_49" style=""><label class="dform_label" for="ddform_49">Untitled</label><div class="dform_container">Other Attorneys of Record</div></div><div class="dform_element dform_columns_2 dftop_label field_columns_2 " id="forms_field_50" style=""><div class="dform_container"><div class="dfcolumns"><div class="column composer-sortable" data-number="1" style="width:50%"><div class="dform_element dform_text_input dftop_label field_oar1_attorney " id="forms_field_51" style=""><label class="dform_label" for="ddform_51">Attorney</label><div class="dform_container"><input type="text" name="fields[51]" value="" class="text " id="ddform_51" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_oar1_firm " id="forms_field_52" style=""><label class="dform_label" for="ddform_52">Firm</label><div class="dform_container"><input type="text" name="fields[52]" value="" class="text " id="ddform_52" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_oar1_address " id="forms_field_53" style=""><label class="dform_label" for="ddform_53">Address</label><div class="dform_container"><input type="text" name="fields[53]" value="" class="text " id="ddform_53" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_email dftop_label field_oar1_email " id="forms_field_54" style=""><label class="dform_label" for="ddform_54">Email</label><div class="dform_container"><input type="email" name="fields[54]" value="" class="text validate[custom[email]] " id="ddform_54" placeholder="" data-placeholder=""  /></div></div></div><div class="column column-last composer-sortable" data-number="2" style="width:50%"><div class="dform_element dform_phone dftop_label field_oar1_telephone " id="forms_field_55" style=""><label class="dform_label" for="ddform_55">Telephone</label><div class="dform_container"><div class="dfinput_phones"><div class="dfinput_left phone_number"><input type="tel" name="fields[55][phone_number]" value="" class="text" id="ddform_55_number"  /><label for="ddform_55_number">Phone Number</label></div><br clear="all"></div></div></div><div class="dform_element dform_text_input dftop_label field_oar1_fax " id="forms_field_56" style=""><label class="dform_label" for="ddform_56">Fax</label><div class="dform_container"><input type="text" name="fields[56]" value="" class="text " id="ddform_56" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_oar1_representing " id="forms_field_57" style=""><label class="dform_label" for="ddform_57">Representing</label><div class="dform_container"><input type="text" name="fields[57]" value="" class="text " id="ddform_57" placeholder="" data-placeholder=""  /></div></div></div><br clear="all"></div></div></div><div class="dform_element dform_columns_2 dftop_label field_columns_2 " id="forms_field_58" style=""><div class="dform_container"><div class="dfcolumns"><div class="column composer-sortable" data-number="1" style="width:50%"><div class="dform_element dform_text_input dftop_label field_oar2_attorney " id="forms_field_59" style=""><label class="dform_label" for="ddform_59">Attorney</label><div class="dform_container"><input type="text" name="fields[59]" value="" class="text " id="ddform_59" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_oar2_firm " id="forms_field_60" style=""><label class="dform_label" for="ddform_60">Firm</label><div class="dform_container"><input type="text" name="fields[60]" value="" class="text " id="ddform_60" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_oar2_address " id="forms_field_61" style=""><label class="dform_label" for="ddform_61">Address</label><div class="dform_container"><input type="text" name="fields[61]" value="" class="text " id="ddform_61" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_email dftop_label field_oar2_email " id="forms_field_62" style=""><label class="dform_label" for="ddform_62">Email</label><div class="dform_container"><input type="email" name="fields[62]" value="" class="text validate[custom[email]] " id="ddform_62" placeholder="" data-placeholder=""  /></div></div></div><div class="column column-last composer-sortable" data-number="2" style="width:50%"><div class="dform_element dform_phone dftop_label field_oar2_telephone " id="forms_field_63" style=""><label class="dform_label" for="ddform_63">Telephone</label><div class="dform_container"><div class="dfinput_phones"><div class="dfinput_left phone_number"><input type="tel" name="fields[63][phone_number]" value="" class="text" id="ddform_63_number"  /><label for="ddform_63_number">Phone Number</label></div><br clear="all"></div></div></div><div class="dform_element dform_text_input dftop_label field_oar2_fax " id="forms_field_64" style=""><label class="dform_label" for="ddform_64">Fax</label><div class="dform_container"><input type="text" name="fields[64]" value="" class="text " id="ddform_64" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_oar2_representing " id="forms_field_65" style=""><label class="dform_label" for="ddform_65">Representing</label><div class="dform_container"><input type="text" name="fields[65]" value="" class="text " id="ddform_65" placeholder="" data-placeholder=""  /></div></div></div><br clear="all"></div></div></div><div class="dform_element dform_columns_2 dftop_label field_columns_2 " id="forms_field_66" style=""><div class="dform_container"><div class="dfcolumns"><div class="column composer-sortable" data-number="1" style="width:50%"><div class="dform_element dform_text_input dftop_label field_oar3_attorney " id="forms_field_67" style=""><label class="dform_label" for="ddform_67">Attorney</label><div class="dform_container"><input type="text" name="fields[67]" value="" class="text " id="ddform_67" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_oar3_firm " id="forms_field_68" style=""><label class="dform_label" for="ddform_68">Firm</label><div class="dform_container"><input type="text" name="fields[68]" value="" class="text " id="ddform_68" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_oar3_address " id="forms_field_69" style=""><label class="dform_label" for="ddform_69">Address</label><div class="dform_container"><input type="text" name="fields[69]" value="" class="text " id="ddform_69" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_email dftop_label field_oar3_email " id="forms_field_70" style=""><label class="dform_label" for="ddform_70">Email</label><div class="dform_container"><input type="email" name="fields[70]" value="" class="text validate[custom[email]] " id="ddform_70" placeholder="" data-placeholder=""  /></div></div></div><div class="column column-last composer-sortable" data-number="2" style="width:50%"><div class="dform_element dform_phone dftop_label field_oar3_telephone " id="forms_field_71" style=""><label class="dform_label" for="ddform_71">Telephone</label><div class="dform_container"><div class="dfinput_phones"><div class="dfinput_left phone_number"><input type="tel" name="fields[71][phone_number]" value="" class="text" id="ddform_71_number"  /><label for="ddform_71_number">Phone Number</label></div><br clear="all"></div></div></div><div class="dform_element dform_text_input dftop_label field_oar3_fax " id="forms_field_72" style=""><label class="dform_label" for="ddform_72">Fax</label><div class="dform_container"><input type="text" name="fields[72]" value="" class="text " id="ddform_72" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_oar3_representing " id="forms_field_73" style=""><label class="dform_label" for="ddform_73">Representing</label><div class="dform_container"><input type="text" name="fields[73]" value="" class="text " id="ddform_73" placeholder="" data-placeholder=""  /></div></div></div><br clear="all"></div></div></div><div class="dform_element dform_html field_untitled " id="forms_field_101" style=""><label class="dform_label" for="ddform_101">Untitled</label><div class="dform_container">Record Information</div></div><div class="dform_element dform_columns_2 dftop_label field_columns_2 " id="forms_field_74" style=""><div class="dform_container"><div class="dfcolumns"><div class="column composer-sortable" data-number="1" style="width:50%"><div class="dform_element dform_text_input dftop_label field_records_pertaining_to " id="forms_field_75" style=""><label class="dform_label" for="ddform_75">Records Pertaining to</label><div class="dform_container"><input type="text" name="fields[75]" value="" class="text " id="ddform_75" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_date_of_birth " id="forms_field_76" style=""><label class="dform_label" for="ddform_76">Date of Birth</label><div class="dform_container"><input type="text" name="fields[76]" value="" class="text " id="ddform_76" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_social_security " id="forms_field_77" style=""><label class="dform_label" for="ddform_77">Social Security # (only last 4 digits)</label><div class="dform_container"><input type="text" name="fields[77]" value="" class="text " id="ddform_77" placeholder="" data-placeholder=""  /></div></div><div class="dform_element dform_text_input dftop_label field_any_alias " id="forms_field_78" style=""><label class="dform_label" for="ddform_78">Any Alias</label><div class="dform_container"><input type="text" name="fields[78]" value="" class="text " id="ddform_78" placeholder="" data-placeholder=""  /></div></div></div><div class="column column-last composer-sortable" data-number="2" style="width:50%"><div class="dform_element dform_checkbox dftop_label field_type_of_record_requested " id="forms_field_79" style=""><label class="dform_label" for="ddform_79">Type of Record Requested</label><div class="dform_container"><ul class="checkboxes"><li><label for="fields[79]-0"><input type="checkbox" name="fields[79][]" value="Medical"  class="" id="fields[79]-0"  />&nbsp; Medical</label></li><li><label for="fields[79]-1"><input type="checkbox" name="fields[79][]" value="Billing"  class="" id="fields[79]-1"  />&nbsp; Billing</label></li><li><label for="fields[79]-2"><input type="checkbox" name="fields[79][]" value="Authorization"  class="" id="fields[79]-2"  />&nbsp; Authorization</label></li><li><label for="fields[79]-3"><input type="checkbox" name="fields[79][]" value="Payroll"  class="" id="fields[79]-3"  />&nbsp; Payroll</label></li><li><label for="fields[79]-4"><input type="checkbox" name="fields[79][]" value="Non-Admissible"  class="" id="fields[79]-4"  />&nbsp; Non-Admissible</label></li><li><label for="fields[79]-5"><input type="checkbox" name="fields[79][]" value="X-Rays"  class="" id="fields[79]-5"  />&nbsp; X-Rays</label></li><li><label for="fields[79]-6"><input type="checkbox" name="fields[79][]" value="Admissible"  class="" id="fields[79]-6"  />&nbsp; Admissible</label></li><li><label for="fields[79]-7"><input type="checkbox" name="fields[79][]" value="Employment "  class="" id="fields[79]-7"  />&nbsp; Employment</label></li><li><label for="fields[79]-8"><input type="checkbox" name="fields[79][]" value="Personnel"  class="" id="fields[79]-8"  />&nbsp; Personnel</label></li><li><label for="fields[79]-9"><input type="checkbox" name="fields[79][]" value="Other"  class="" id="fields[79]-9"  />&nbsp; Other</label></li></ul></div></div><div class="dform_element dform_textarea dftop_label field_other_description " id="forms_field_103" style="display:none"><label class="dform_label" for="ddform_103">Other</label><div class="dform_container"><textarea name="fields[103]" cols="50" rows="4" class="" id="ddform_103" placeholder="" data-placeholder="" ></textarea></div><script type="text/javascript">if (typeof(window.Forms) != 'undefined') Forms.AddConditional(103,{"options":{"enable":"yes","display":"show","match":"all"},"conditionals":[{"field":79,"operator":"is","value":"Other"}]});</script></div><div class="dform_element dform_date dftop_label field_date_range_of_records_requested " id="forms_field_80" style=""><label class="dform_label" for="ddform_80">Date Range of Records requested</label><div class="dform_container"><input type="text" name="fields[80]" value="" class="text  formsfdatepicker " id="ddform_80"  />
+			<script type='text/javascript'>
+			$(function() {
+				jQuery('#forms_field_80 input.formsfdatepicker').datepicker({dateFormat:'mm/dd/yy'});
+			});
+			</script></div></div><div class="dform_element dform_date dftop_label field_date_to " id="forms_field_81" style=""><label class="dform_label" for="ddform_81">to</label><div class="dform_container"><input type="text" name="fields[81]" value="" class="text  formsfdatepicker " id="ddform_81"  />
+			<script type='text/javascript'>
+			$(function() {
+				jQuery('#forms_field_81 input.formsfdatepicker').datepicker({dateFormat:'mm/dd/yy'});
+			});
+			</script></div></div></div><br clear="all"></div></div></div><div class="dform_element dform_html field_untitled " id="forms_field_82" style=""><label class="dform_label" for="ddform_82">Untitled</label><div class="dform_container">Custodians</div></div><div class="dform_element dform_columns_3 dftop_label field_columns_3 " id="forms_field_83" style=""><div class="dform_container"><div class="dfcolumns"><div class="column composer-sortable" data-number="1" style="width:33%"><div class="dform_element dform_text_input dftop_label field_custodians1 " id="forms_field_84" style=""><label class="dform_label" for="ddform_84">Custodians</label><div class="dform_container"><input type="text" name="fields[84]" value="" class="text " id="ddform_84" placeholder="" data-placeholder=""  /></div></div></div><div class="column composer-sortable" data-number="2" style="width:33%"><div class="dform_element dform_text_input dftop_label field_location1 " id="forms_field_85" style=""><label class="dform_label" for="ddform_85">Location</label><div class="dform_container"><input type="text" name="fields[85]" value="" class="text " id="ddform_85" placeholder="" data-placeholder=""  /></div></div></div><div class="column column-last composer-sortable" data-number="3" style="width:33%"><div class="dform_element dform_phone dftop_label field_telephone_fax_number1 " id="forms_field_86" style=""><label class="dform_label" for="ddform_86">Telephone/Fax Number</label><div class="dform_container"><div class="dfinput_phones"><div class="dfinput_left phone_number"><input type="tel" name="fields[86][phone_number]" value="" class="text" id="ddform_86_number"  /><label for="ddform_86_number">Phone Number</label></div><br clear="all"></div></div></div></div><br clear="all"></div></div></div><div class="dform_element dform_columns_3 dftop_label field_columns_3 " id="forms_field_87" style=""><div class="dform_container"><div class="dfcolumns"><div class="column composer-sortable" data-number="1" style="width:33%"><div class="dform_element dform_text_input dftop_label field_custodians2 " id="forms_field_88" style=""><div class="dform_container"><input type="text" name="fields[88]" value="" class="text " id="ddform_88" placeholder="" data-placeholder=""  /></div></div></div><div class="column composer-sortable" data-number="2" style="width:33%"><div class="dform_element dform_text_input dftop_label field_location2 " id="forms_field_89" style=""><div class="dform_container"><input type="text" name="fields[89]" value="" class="text " id="ddform_89" placeholder="" data-placeholder=""  /></div></div></div><div class="column column-last composer-sortable" data-number="3" style="width:33%"><div class="dform_element dform_phone dftop_label field_telephone_fax_number2 " id="forms_field_90" style=""><div class="dform_container"><div class="dfinput_phones"><div class="dfinput_left phone_number"><input type="tel" name="fields[90][phone_number]" value="" class="text" id="ddform_90_number"  /><label for="ddform_90_number">Phone Number</label></div><br clear="all"></div></div></div></div><br clear="all"></div></div></div><div class="dform_element dform_columns_3 dftop_label field_columns_3 " id="forms_field_91" style=""><div class="dform_container"><div class="dfcolumns"><div class="column composer-sortable" data-number="1" style="width:33%"><div class="dform_element dform_text_input dftop_label field_custodians3 " id="forms_field_92" style=""><div class="dform_container"><input type="text" name="fields[92]" value="" class="text " id="ddform_92" placeholder="" data-placeholder=""  /></div></div></div><div class="column composer-sortable" data-number="2" style="width:33%"><div class="dform_element dform_text_input dftop_label field_location3 " id="forms_field_93" style=""><div class="dform_container"><input type="text" name="fields[93]" value="" class="text " id="ddform_93" placeholder="" data-placeholder=""  /></div></div></div><div class="column column-last composer-sortable" data-number="3" style="width:33%"><div class="dform_element dform_phone dftop_label field_phone " id="forms_field_94" style=""><div class="dform_container"><div class="dfinput_phones"><div class="dfinput_left phone_number"><input type="tel" name="fields[94][phone_number]" value="" class="text" id="ddform_94_number"  /><label for="ddform_94_number">Phone Number</label></div><br clear="all"></div></div></div></div><br clear="all"></div></div></div><div class="dform_element dform_columns_3 dftop_label field_columns_3 " id="forms_field_109" style=""><div class="dform_container"><div class="dfcolumns"><div class="column composer-sortable" data-number="1" style="width:33%"><div class="dform_element dform_text_input dftop_label field_custodians4 " id="forms_field_110" style=""><div class="dform_container"><input type="text" name="fields[110]" value="" class="text " id="ddform_110" placeholder="" data-placeholder=""  /></div></div></div><div class="column composer-sortable" data-number="2" style="width:33%"><div class="dform_element dform_text_input dftop_label field_location4 " id="forms_field_111" style=""><div class="dform_container"><input type="text" name="fields[111]" value="" class="text " id="ddform_111" placeholder="" data-placeholder=""  /></div></div></div><div class="column column-last composer-sortable" data-number="3" style="width:33%"><div class="dform_element dform_phone dftop_label field_phone2 " id="forms_field_112" style=""><div class="dform_container"><div class="dfinput_phones"><div class="dfinput_left phone_number"><input type="tel" name="fields[112][phone_number]" value="" class="text" id="ddform_112_number"  /><label for="ddform_112_number">Phone Number</label></div><br clear="all"></div></div></div></div><br clear="all"></div></div></div><div class="dform_element dform_columns_3 dftop_label field_columns_3 " id="forms_field_113" style=""><div class="dform_container"><div class="dfcolumns"><div class="column composer-sortable" data-number="1" style="width:33%"><div class="dform_element dform_text_input dftop_label field_custodians5 " id="forms_field_114" style=""><div class="dform_container"><input type="text" name="fields[114]" value="" class="text " id="ddform_114" placeholder="" data-placeholder=""  /></div></div></div><div class="column composer-sortable" data-number="2" style="width:33%"><div class="dform_element dform_text_input dftop_label field_location5 " id="forms_field_115" style=""><div class="dform_container"><input type="text" name="fields[115]" value="" class="text " id="ddform_115" placeholder="" data-placeholder=""  /></div></div></div><div class="column column-last composer-sortable" data-number="3" style="width:33%"><div class="dform_element dform_phone dftop_label field_phone3 " id="forms_field_116" style=""><div class="dform_container"><div class="dfinput_phones"><div class="dfinput_left phone_number"><input type="tel" name="fields[116][phone_number]" value="" class="text" id="ddform_116_number"  /><label for="ddform_116_number">Phone Number</label></div><br clear="all"></div></div></div></div><br clear="all"></div></div></div><div class="dform_element dform_columns_3 dftop_label field_columns_3 " id="forms_field_118" style=""><div class="dform_container"><div class="dfcolumns"><div class="column composer-sortable" data-number="1" style="width:33%"><div class="dform_element dform_text_input dftop_label field_text_input " id="forms_field_119" style=""><div class="dform_container"><input type="text" name="fields[119]" value="" class="text " id="ddform_119" placeholder="" data-placeholder=""  /></div></div></div><div class="column composer-sortable" data-number="2" style="width:33%"><div class="dform_element dform_text_input dftop_label field_text_input " id="forms_field_120" style=""><div class="dform_container"><input type="text" name="fields[120]" value="" class="text " id="ddform_120" placeholder="" data-placeholder=""  /></div></div></div><div class="column column-last composer-sortable" data-number="3" style="width:33%"><div class="dform_element dform_phone dftop_label field_phone " id="forms_field_121" style=""><div class="dform_container"><div class="dfinput_phones"><div class="dfinput_left phone_number"><input type="tel" name="fields[121][phone_number]" value="" class="text" id="ddform_121_number"  /><label for="ddform_121_number">Phone Number</label></div><br clear="all"></div></div></div></div><br clear="all"></div></div></div><div class="dform_element dform_columns_3 dftop_label field_columns_3 " id="forms_field_122" style=""><div class="dform_container"><div class="dfcolumns"><div class="column composer-sortable" data-number="1" style="width:33%"><div class="dform_element dform_text_input dftop_label field_text_input " id="forms_field_123" style=""><div class="dform_container"><input type="text" name="fields[123]" value="" class="text " id="ddform_123" placeholder="" data-placeholder=""  /></div></div></div><div class="column composer-sortable" data-number="2" style="width:33%"><div class="dform_element dform_text_input dftop_label field_text_input " id="forms_field_124" style=""><div class="dform_container"><input type="text" name="fields[124]" value="" class="text " id="ddform_124" placeholder="" data-placeholder=""  /></div></div></div><div class="column column-last composer-sortable" data-number="3" style="width:33%"><div class="dform_element dform_phone dftop_label field_phone " id="forms_field_125" style=""><div class="dform_container"><div class="dfinput_phones"><div class="dfinput_left phone_number"><input type="tel" name="fields[125][phone_number]" value="" class="text" id="ddform_125_number"  /><label for="ddform_125_number">Phone Number</label></div><br clear="all"></div></div></div></div><br clear="all"></div></div></div><div class="dform_element dform_columns_3 dftop_label field_columns_3 " id="forms_field_126" style=""><div class="dform_container"><div class="dfcolumns"><div class="column composer-sortable" data-number="1" style="width:33%"><div class="dform_element dform_text_input dftop_label field_text_input " id="forms_field_127" style=""><div class="dform_container"><input type="text" name="fields[127]" value="" class="text " id="ddform_127" placeholder="" data-placeholder=""  /></div></div></div><div class="column composer-sortable" data-number="2" style="width:33%"><div class="dform_element dform_text_input dftop_label field_text_input " id="forms_field_128" style=""><div class="dform_container"><input type="text" name="fields[128]" value="" class="text " id="ddform_128" placeholder="" data-placeholder=""  /></div></div></div><div class="column column-last composer-sortable" data-number="3" style="width:33%"><div class="dform_element dform_phone dftop_label field_phone " id="forms_field_129" style=""><div class="dform_container"><div class="dfinput_phones"><div class="dfinput_left phone_number"><input type="tel" name="fields[129][phone_number]" value="" class="text" id="ddform_129_number"  /><label for="ddform_129_number">Phone Number</label></div><br clear="all"></div></div></div></div><br clear="all"></div></div></div><div class="dform_element dform_columns_3 dftop_label field_columns_3 " id="forms_field_130" style=""><div class="dform_container"><div class="dfcolumns"><div class="column composer-sortable" data-number="1" style="width:33%"><div class="dform_element dform_text_input dftop_label field_text_input " id="forms_field_131" style=""><div class="dform_container"><input type="text" name="fields[131]" value="" class="text " id="ddform_131" placeholder="" data-placeholder=""  /></div></div></div><div class="column composer-sortable" data-number="2" style="width:33%"><div class="dform_element dform_text_input dftop_label field_text_input " id="forms_field_132" style=""><div class="dform_container"><input type="text" name="fields[132]" value="" class="text " id="ddform_132" placeholder="" data-placeholder=""  /></div></div></div><div class="column column-last composer-sortable" data-number="3" style="width:33%"><div class="dform_element dform_phone dftop_label field_phone " id="forms_field_133" style=""><div class="dform_container"><div class="dfinput_phones"><div class="dfinput_left phone_number"><input type="tel" name="fields[133][phone_number]" value="" class="text" id="ddform_133_number"  /><label for="ddform_133_number">Phone Number</label></div><br clear="all"></div></div></div></div><br clear="all"></div></div></div><div class="dform_element dform_columns_3 dftop_label field_columns_3 " id="forms_field_134" style=""><div class="dform_container"><div class="dfcolumns"><div class="column composer-sortable" data-number="1" style="width:33%"><div class="dform_element dform_text_input dftop_label field_text_input " id="forms_field_135" style=""><div class="dform_container"><input type="text" name="fields[135]" value="" class="text " id="ddform_135" placeholder="" data-placeholder=""  /></div></div></div><div class="column composer-sortable" data-number="2" style="width:33%"><div class="dform_element dform_text_input dftop_label field_text_input " id="forms_field_136" style=""><div class="dform_container"><input type="text" name="fields[136]" value="" class="text " id="ddform_136" placeholder="" data-placeholder=""  /></div></div></div><div class="column column-last composer-sortable" data-number="3" style="width:33%"><div class="dform_element dform_phone dftop_label field_phone " id="forms_field_137" style=""><div class="dform_container"><div class="dfinput_phones"><div class="dfinput_left phone_number"><input type="tel" name="fields[137][phone_number]" value="" class="text" id="ddform_137_number"  /><label for="ddform_137_number">Phone Number</label></div><br clear="all"></div></div></div></div><br clear="all"></div></div></div><div class="dform_element dform_columns_3 dftop_label field_columns_3 " id="forms_field_138" style=""><div class="dform_container"><div class="dfcolumns"><div class="column composer-sortable" data-number="1" style="width:33%"><div class="dform_element dform_text_input dftop_label field_text_input " id="forms_field_139" style=""><div class="dform_container"><input type="text" name="fields[139]" value="" class="text " id="ddform_139" placeholder="" data-placeholder=""  /></div></div></div><div class="column composer-sortable" data-number="2" style="width:33%"><div class="dform_element dform_text_input dftop_label field_text_input " id="forms_field_140" style=""><div class="dform_container"><input type="text" name="fields[140]" value="" class="text " id="ddform_140" placeholder="" data-placeholder=""  /></div></div></div><div class="column column-last composer-sortable" data-number="3" style="width:33%"><div class="dform_element dform_phone dftop_label field_phone " id="forms_field_141" style=""><div class="dform_container"><div class="dfinput_phones"><div class="dfinput_left phone_number"><input type="tel" name="fields[141][phone_number]" value="" class="text" id="ddform_141_number"  /><label for="ddform_141_number">Phone Number</label></div><br clear="all"></div></div></div></div><br clear="all"></div></div></div><div class="dform_element dform_columns_3 dftop_label field_columns_3 " id="forms_field_142" style=""><div class="dform_container"><div class="dfcolumns"><div class="column composer-sortable" data-number="1" style="width:33%"><div class="dform_element dform_text_input dftop_label field_text_input " id="forms_field_143" style=""><div class="dform_container"><input type="text" name="fields[143]" value="" class="text " id="ddform_143" placeholder="" data-placeholder=""  /></div></div></div><div class="column composer-sortable" data-number="2" style="width:33%"><div class="dform_element dform_text_input dftop_label field_text_input " id="forms_field_144" style=""><div class="dform_container"><input type="text" name="fields[144]" value="" class="text " id="ddform_144" placeholder="" data-placeholder=""  /></div></div></div><div class="column column-last composer-sortable" data-number="3" style="width:33%"><div class="dform_element dform_phone dftop_label field_phone " id="forms_field_145" style=""><div class="dform_container"><div class="dfinput_phones"><div class="dfinput_left phone_number"><input type="tel" name="fields[145][phone_number]" value="" class="text" id="ddform_145_number"  /><label for="ddform_145_number">Phone Number</label></div><br clear="all"></div></div></div></div><br clear="all"></div></div></div><div class="dform_element dform_html field_untitled " id="forms_field_95" style=""><label class="dform_label" for="ddform_95">Untitled</label><div class="dform_container">Attach Documents</div></div><div class="dform_element dform_file_upload dftop_label field_attach_documents1 " id="forms_field_96" style=""><div class="dform_container"><input type="file" name="fields[96]" value="" class=""  />
+<input type="hidden" name="fields[96]" value="DUMMY" />
+</div></div><div class="dform_element dform_file_upload dftop_label field_attach_documents2 " id="forms_field_97" style=""><div class="dform_container"><input type="file" name="fields[97]" value="" class=""  />
+<input type="hidden" name="fields[97]" value="DUMMY" />
+</div></div><div class="dform_element dform_file_upload dftop_label field_attach_documents3 " id="forms_field_98" style=""><div class="dform_container"><input type="file" name="fields[98]" value="" class=""  />
+<input type="hidden" name="fields[98]" value="DUMMY" />
+</div></div><div class="dform_element dform_file_upload dftop_label field_attach_documents4 " id="forms_field_99" style=""><div class="dform_container"><input type="file" name="fields[99]" value="" class=""  />
+<input type="hidden" name="fields[99]" value="DUMMY" />
+</div></div><div class="dform_element dform_file_upload dftop_label field_attach_documents5 " id="forms_field_100" style=""><div class="dform_container"><input type="file" name="fields[100]" value="" class=""  />
+<input type="hidden" name="fields[100]" value="DUMMY" />
+</div></div><div class="dform_element dform_captcha dftop_label field_captcha " id="forms_field_102" style=""><label class="dform_label" for="ddform_102">Please check box</label><div class="dform_container"><div class="g-recaptcha" data-sitekey="6LfE9iEUAAAAAB1XSOb3RF-4_j_oqhi81TfG2DG9" data-theme="light" data-size="normal"></div><script src="//www.google.com/recaptcha/api.js?hl=en"></script></div></div><div class="dform_element submit_button"> <div class="dform_container"><div class="dfinput_full"><input type="submit" class="submit" name="submit_button" value="submit" data-value="submit" data-wait="Verifying..."/></div></div></div></div></form>
+						</div>
+					</div>
+				</div>
+				<div id="secondary_content" class="record-retrieval-order-form-block">
+					<h2 style="padding-left: 20px;">Services</h2>
+					<ul>
+						
+						<li><a href="http://www.lorr.com/services/record-retrieval-services">Record Retrieval Services</a></li>
+						
+						<li><a href="http://www.lorr.com/services/online-repository">Online Repository - Texas Legal Repository</a></li>
+						
+						<li><a href="http://www.lorr.com/services/legal-videographers-and-photography">Legal Videographers and Photography</a></li>
+						
+						<li><a href="http://www.lorr.com/services/legal-presentations-and-exhibits">Legal Presentations and Exhibits</a></li>
+						
+						<li><a href="http://www.lorr.com/services/citation-and-subpoena-services">Citation and Subpoena Services</a></li>
+						
+					</ul>
+					
+                	 
+					 <img src="/images/site/btn_form.png" alt="Record Retrieval Form">
+				</div>
+
+				<br class="clear" />
+			</div>
+			<div id="push"></div>
+		</div>
+		<div id="footer_wrapper">
+	<div id="footer">
+		<div id="footer_affiliations">
+			<p>
+				<img src="/images/site/ftr_affil.png" alt="Affiliations" style="margin-right: 50px;" />
+				<a href="" rel='nofollow'><img src="/images/site/ftr_logo_1.png" alt="" /></a>
+				<a href="" rel='nofollow'><img src="/images/site/ftr_logo_2.png" alt="" /></a>
+				<a href="" rel='nofollow'><img src="/images/site/ftr_logo_3.png" alt="" /></a>
+				<a href="" rel='nofollow'><img src="/images/site/ftr_logo_4.png" alt="" /></a>
+				<a href="" rel='nofollow'><img src="/images/site/ftr_logo_5.png" alt="" /></a>
+				<a href="" rel='nofollow'><img src="/images/site/ftr_logo_6.png" alt="" /></a>
+			</p>
+		</div>
+		<div id="footer_quick_links">
+			<h3>Quick Links</h3>
+			<ul>
+				<li><a href="http://www.lorr.com/">Home</a></li>
+				<li><a href="/the-company/">Company</a></li>
+				<li><a href="/legal-support-news/">News</a></li>
+				<li><a href="/contact/">Contact</a></li>
+			</ul>
+		</div>
+		<div id="footer_services">
+			<h3>Services</h3>
+			<ul>
+				<li><a href="/services/record-retrieval/">Record Retrieval</a></li>
+				<li><a href="/services/process-services/">Process Service</a></li>
+				<li><a href="/services/videography-and-photography/">Videography &amp; Photography</a></li>
+				<li><a href="/services/presentations-and-exhibits/">Presentations &amp; Exhibitions</a></li>
+				<li><a href="/services/online-repository/">Online Repository</a></li>
+			</ul>
+		</div>
+		<div id="footer_resources">
+			<h3>Resources</h3>
+			<ul>
+				<li><a href="/resources/texas/">Texas</a></li>
+				<li><a href="/resources/federal/">Federal</a></li>
+				<li><a href="/resources/forms/">Forms</a></li>
+				<li><a href="/resources/professional-boards/">Professional Boards</a></li>
+				<li><a href="/resources/travel/">Travel</a></li>
+			</ul>
+		</div>
+		
+		<div id="footer_connect">
+			<p>
+				<img src="/images/site/sm_connect.png" alt="Connect" style="margin-right: 10px;" />
+				<a href="http://www.facebook.com/pages/Law-Order-Record-Retrieval/221136997981840" onclick="window.open (this.href); return false;"><img src="/images/site/sm_fb.jpg" alt="Facebook" /></a>
+				<a href="https://www.linkedin.com/company/lorr-inc" onclick="window.open (this.href); return false;"><img src="/images/site/sm_linkdin.jpg" alt="LinkedIn" /></a>
+				<a href="https://twitter.com/LORRtx" onclick="window.open (this.href); return false;"><img src="/images/site/sm_twitter.jpg" alt="Twitter" /></a>
+				<a href=" http://www.youtube.com/channel/UCi18ILCTfxsVOzgBxWf8DsQ?feature=mhee" onclick="window.open (this.href); return false;"><img src="/images/site/sm_youtube.jpg" alt="Youtube" /></a>
+				<a href="https://plus.google.com/+LawandOrderRecordRetrievalSanAntonio" onclick="window.open (this.href); return false;"rel="publisher"><img src="/images/site/sm_google.jpg" alt="Youtube" /></a>
+			</p>
+			
+	</div>
+		<div id="footer_updates">
+			<h3>Sign Up For Updates</h3>
+			<form action="http://email.gpeflow.com/t/r/s/tkzdrd/" method="post">
+				<p><input type="text" name="email" placeholder="email address" /></p>
+				<p><input type="submit" class="submit" value="" />	</p>
+			</form>
+		</div>
+		<div id="copyright">
+<p>Copyright 2018. Law &amp; Order Record Retrieval. Web Design by<a href="http://www.parscale.com" style="color:#ECC76C;" title="San Antonio Web Designer" onclick="window.open (this.href); return false;"> Giles-Parscale Inc.</a>
+	   </div>
+	</div>
+</div>
+	</body>
+</html>

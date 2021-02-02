@@ -1,0 +1,589 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Record Retrieval Order Form</title>
+<meta name='keywords' content='Law &amp; Order Record Retrieval and Online Repository' />
+<meta name='description' content='Law &amp; Order Record Retrieval and Online Repository. 503 E. Ramsey, Suite 201
+San Antonio, Texas 78216. (210) 366-0800. ' />
+<link rel='canonical' href='http://www.lorr.com/services/record-retrieval-order-form' />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Francois+One|Open+Sans+Condensed:700' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="http://www.lorr.com/?css=includes/screen.v.1364931618" type="text/css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/js/jquery.cycle.min.js"></script>  
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34252874-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+		<script src="/js/jquery.validate.min.js"></script>
+		<script type="text/javascript">
+				var clicked = false;
+			  window.onbeforeunload = function(event) { 
+			  	if(clicked == false){
+				  	return "If you leave this page all form fields will be lost."; 
+			  	}
+			  };
+			$(document).ready(function(event){
+				
+				// Test if submission is the form
+				$('.submit').on('click',function(){
+					clicked = true;
+				});
+
+				//Validation
+				$('#record_form').validate({
+					invalidHandler: function(event, validator){
+						clicked = false;
+					}
+				});
+				
+				//Add More Attorneys
+				$('#another_attorney').on('click',function(){
+					var row = $('#attorneys').find('div:last').find('input.div_row').val();
+					//console.log(row);
+					$('#attorneys').append('<div class="form_area"><h5>Additional Attorney of Record</h5><table><tr><td class="left_td">Attorney</td><td><input type="hidden" name="other_attorney[]" class="div_row" value="" /><input type="text" name="other_attorney[]" /></td><td class="left_td">Telephone</td><td><input type="text" name="other_attorney[]" /></td></tr><tr><td class="left_td">Firm</td><td><input type="text" name="other_attorney[]" /></td><td class="left_td">Fax</td><td><input type="text" name="other_attorney[]" /></td></tr><tr><td class="left_td">Address</td><td><input type="text" name="other_attorney[]" /></td><td class="left_td">Representing</td><td><input type="text" name="other_attorney[]" /><input type="hidden" name="other_attorney[]" value=" " /></td></tr><tr><td class="left_td">Email</td><td><input type="text" name="other_attorney[]" tabindex="36" /></td><td class="left_td">&nbsp;</td><td><input type="hidden" name="other_attorney[]" value=" " /></td></tr></table></div>');
+					var next = parseInt(row) + 1;
+					$('#attorneys').find('div:last').find('input.div_row').val(next);
+					return false;
+				});
+				
+				//Add More Custodians
+				$('#another_custodian').on('click',function(){
+					var row = $('#custodian_table').find('tr:last').find('input.tr_row').val();
+					$('#custodian_table').append('<tr><td><input type="hidden" name="custodians[]" class="tr_row" value="" /><input type="text" name="custodians[]" /></td><td><input type="text" name="custodians[]" /></td><td><input type="text" name="custodians[]" /><input type="hidden" name="custodians[]" value=" " /></td></tr>');
+					var next = parseInt(row) + 1;
+					$('#custodian_table').find('tr:last').find('input.tr_row').val(next);
+					return false;
+				});
+				
+				// Plantiff Info
+				$('.previous_record').on('click',function(){
+					if($(this).val() == 'Is Add-On Case'){$(this).closest('p').next().show();}else{$(this).closest('p').next().hide();}
+				});
+
+				// Plantiff Info
+				$('#other_type').on('click',function(){
+					if($(this).is(':checked')){$(this).closest('li').next().show();}else{$(this).closest('li').next().hide();}
+				});
+				
+				// Datepicker
+				$('.datepicker').datepicker();
+
+				// Return to Input
+				$('#record_form').on('keypress',function(e){
+					var nextTab = parseInt($(this).find(':focus').attr('tabindex')) + 1;
+					var nextElement = $('[tabindex="' + nextTab + '"]');
+					if($(this).find(':focus').attr('class') != 'submit'){
+						if(e.keyCode == 13){
+					    	if(nextElement.length ){nextElement.focus();}else{$('input[tabindex="1"]').focus();}   
+							return false;
+						}
+					}
+				});
+			});
+		</script>
+		<!--[if lt IE 7]>
+		<script>
+			$(document).ready(function(){
+				$('#record_form').html('<p>Your browser is not supported for this form. Please update to a more modern browser like Firefox or Chrome.</p>');
+			});
+		</script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="wrapper">
+			<div class="one-edge-shadow" id="header_wrapper">
+	<div id="header">
+		<div id="header_logo">
+			<a href="http://www.lorr.com/"><img src="/images/site/header_logo.png" alt="Law &amp; Order Records and Support" /></a>
+		</div>
+		<div id="header_repository">
+			<a href="http://www.lorr.com/services/record-retrieval-order-form"><img src="/images/site/btn_recordretrieval.png" alt="Record Retrieval" /></a>
+			<a href="https://lorr.egnyte.com/" onclick="window.open (this.href); return false;"><img src="/images/site/header_btn.png" alt="Online Repository" /></a>
+		</div>
+		<div id="header_contact">
+		<p>	Tel: <a href="tel:8007369105" style="color:#736A5D;">(800) 736-9105</a>  Fax: (800) 335-4002 </p><!-- <a href="tel:8007369105"><img src="/images/site/header_ph_number.png" alt="1-800-736-9105" /></a> -->
+		</div>
+		<div id="navigation">
+			<ul>
+				<li><a href="/the-company" id="nav1">The Company</a></li>
+				<li><a href="/services" id="nav2" class="active">Services</a></li>
+				<li><a href="/resources" id="nav3">Resources</a></li>
+				<li><a href="/legal-support-news" id="nav4">News</a></li>
+				<li><a href="/contact" id="nav5">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="header_shadow">
+	
+</div>
+	
+			<div id="content">
+				<div id="main_content">
+					<h1><strong>Record Retrieval Order Form</strong></h1>
+					<div class="main_content_body">
+												<p>If you would like to auto-fill this form in the future, you may <a href="/account/register/">register</a> for an account. If you already have an account you can <a href="/account/login/">login</a> here to auto-fill your data.</p>
+												<form action="http://www.lorr.com/?ACT=26" accept-charset="utf-8" id="record_form" enctype="multipart/form-data" method="post"><div style="display:none">
+<input type="hidden" name="params_id" value="34287" />
+</div>
+							<div class="form_area">
+								<p style="margin-bottom: 10px;">Is this a new case order for LORR<br><label><input type="radio" class="required radio" value="New Record" name="new_record">Yes</label> &nbsp; <label><input type="radio" class="required radio" value="Old Record" name="new_record">No</label></p>
+
+								<p style="margin-bottom: 10px;">Is this an Add-On Case Order previously worked on by LORR<br><label><input type="radio" class="required radio previous_record" value="Is Add-On Case" name="previous_record">Yes</label> &nbsp; <label><input type="radio" class="required radio previous_record" value="Not Add-On Case" name="previous_record">No</label></p>
+
+								<p style="display: none;">Plantiff Info<br><input type="text" name="plaintiff_info" id="plaintiff_info" style="width: 400px;"><br>If Yes, you just need to enter the Cause #.</p>
+								
+								<h5>General Information</h5>
+								<table>
+									<tr>
+										<td class="left_td">Ordered by</td>
+										<td><input type="text" name="ordered_by" value="" tabindex="1" /></td>
+										<td class="left_td">Cause #</td>
+										<td><input type="text" name="cause" tabindex="7" /></td>
+									</tr>
+									<tr>
+										<td class="left_td">*Email Address</td>
+										<td><input type="text" name="email" value="" class="required" tabindex="2" /></td>
+										<td class="left_td">Court Type</td>
+										<td><input type="text" name="court_type" tabindex="8" /></td>
+									</tr>
+									<tr>
+										<td class="left_td">Date Ordered</td>
+										<td><input type="text" name="date_ordered" class="datepicker" tabindex="3" /></td>
+										<td class="left_td">District #</td>
+										<td><input type="text" name="district" tabindex="9" /></td>
+									</tr>
+									<tr>
+										<td class="left_td">Deposition Date</td>
+										<td><input type="text" name="dep_date" class="datepicker" tabindex="4" /></td>
+										<td class="left_td">County Court #</td>
+										<td><input type="text" name="court_num" tabindex="10" /></td>
+									</tr>
+									<tr>
+										<td class="left_td">Trial Date</td>
+										<td><input type="text" name="trial_date" class="datepicker" tabindex="5" /></td>
+										<td class="left_td">County of</td>
+										<td><input type="text" name="county_of" tabindex="11" /></td>
+									</tr>
+									<tr>
+										<td class="left_td">Claim/File no.</td>
+										<td><input type="text" name="claim_file" tabindex="6" /></td>
+										<td class="left_td">Style of Case</td>
+										<td><input type="text" name="case_style" tabindex="12" /></td>
+									</tr>
+									<tr>
+										<td class="left_td">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="left_td">vs.</td>
+										<td><input type="text" name="claim_file_vs" tabindex="13" /></td>
+									</tr>
+								</table>
+							</div>
+							<div class="form_area">
+								<h5>Ordering Attorney</h5>
+								<table>
+									<tr>
+										<td class="left_td">Name</td>
+										<td><input type="text" name="ord_name" tabindex="14"  /></td>
+										<td class="left_td">Address</td>
+										<td><input type="text" name="ord_address" tabindex="19"  /></td>
+									</tr>
+									<tr>
+										<td>Email Address</td>
+										<td><input type="text" name="ord_email" tabindex="15"  /></td>
+										<td>City</td>
+										<td><input type="text" name="ord_city" tabindex="20"  /></td>
+									</tr>
+									<tr>
+										<td class="left_td">Represents</td>
+										<td><input type="text" name="ord_represents" tabindex="16" /></td>
+										<td class="left_td">State</td>
+										<td>
+											<select name="ord_state" class="select" tabindex="21">
+												<option value="AL">Alabama</option>
+												<option value="AK">Alaska</option>
+												<option value="AZ">Arizona</option>
+												<option value="AR">Arkansas</option>
+												<option value="CA">California</option>
+												<option value="CO">Colorado</option>
+												<option value="CT">Connecticut</option>
+												<option value="DE">Delaware</option>
+												<option value="DC">Dist of Columbia</option>
+												<option value="FL">Florida</option>
+												<option value="GA">Georgia</option>
+												<option value="HI">Hawaii</option>
+												<option value="ID">Idaho</option>
+												<option value="IL">Illinois</option>
+												<option value="IN">Indiana</option>
+												<option value="IA">Iowa</option>
+												<option value="KS">Kansas</option>
+												<option value="KY">Kentucky</option>
+												<option value="LA">Louisiana</option>
+												<option value="ME">Maine</option>
+												<option value="MD">Maryland</option>
+												<option value="MA">Massachusetts</option>
+												<option value="MI">Michigan</option>
+												<option value="MN">Minnesota</option>
+												<option value="MS">Mississippi</option>
+												<option value="MO">Missouri</option>
+												<option value="MT">Montana</option>
+												<option value="NE">Nebraska</option>
+												<option value="NV">Nevada</option>
+												<option value="NH">New Hampshire</option>
+												<option value="NJ">New Jersey</option>
+												<option value="NM">New Mexico</option>
+												<option value="NY">New York</option>
+												<option value="NC">North Carolina</option>
+												<option value="ND">North Dakota</option>
+												<option value="OH">Ohio</option>
+												<option value="OK">Oklahoma</option>
+												<option value="OR">Oregon</option>
+												<option value="PA">Pennsylvania</option>
+												<option value="RI">Rhode Island</option>
+												<option value="SC">South Carolina</option>
+												<option value="SD">South Dakota</option>
+												<option value="TN">Tennessee</option>
+												<option value="TX" selected="selected">Texas</option>
+												<option value="UT">Utah</option>
+												<option value="VT">Vermont</option>
+												<option value="VA">Virginia</option>
+												<option value="WA">Washington</option>
+												<option value="WV">West Virginia</option>
+												<option value="WI">Wisconsin</option>
+												<option value="WY">Wyoming</option>
+											</select>											
+										</td>
+									</tr>
+									<tr>
+										<td class="left_td">Bar #</td>
+										<td><input type="text" name="ord_bar" tabindex="17"  /></td>
+										<td class="left_td">Zip Code</td>
+										<td><input type="text" name="ord_zip" tabindex="22"  /></td>
+									</tr>
+									<tr>
+										<td class="left_td">Firm</td>
+										<td><input type="text" name="ord_firm" tabindex="18"  /></td>
+										<td class="left_td">Telephone</td>
+										<td><input type="text" name="ord_phone" tabindex="23"  /></td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="left_td">Fax</td>
+										<td><input type="text" name="ord_fax" tabindex="24"  /></td>
+									</tr>
+								</table>
+							</div>
+							<div class="form_area">
+								<h5>Billing Information</h5>
+								<table>
+									<tr>
+										<td class="left_td">Name</td>
+										<td><input type="text" name="bill_name" tabindex="25"  /></td>
+										<td class="left_td">Address</td>
+										<td><input type="text" name="bill_address" tabindex="30"  /></td>
+									</tr>
+									<tr>
+										<td class="left_td">Company</td>
+										<td><input type="text" name="bill_company" tabindex="26"  /></td>
+										<td class="left_td">City</td>
+										<td><input type="text" name="bill_city" tabindex="31"  /></td>
+									</tr>
+									<tr>
+										<td class="left_td">Email Address</td>
+										<td><input type="text" name="bill_email" tabindex="27"  /></td>
+										<td class="left_td">State</td>
+										<td>
+											<select name="bill_state" class="select" tabindex="32">
+												<option value="AL">Alabama</option>
+												<option value="AK">Alaska</option>
+												<option value="AZ">Arizona</option>
+												<option value="AR">Arkansas</option>
+												<option value="CA">California</option>
+												<option value="CO">Colorado</option>
+												<option value="CT">Connecticut</option>
+												<option value="DE">Delaware</option>
+												<option value="DC">Dist of Columbia</option>
+												<option value="FL">Florida</option>
+												<option value="GA">Georgia</option>
+												<option value="HI">Hawaii</option>
+												<option value="ID">Idaho</option>
+												<option value="IL">Illinois</option>
+												<option value="IN">Indiana</option>
+												<option value="IA">Iowa</option>
+												<option value="KS">Kansas</option>
+												<option value="KY">Kentucky</option>
+												<option value="LA">Louisiana</option>
+												<option value="ME">Maine</option>
+												<option value="MD">Maryland</option>
+												<option value="MA">Massachusetts</option>
+												<option value="MI">Michigan</option>
+												<option value="MN">Minnesota</option>
+												<option value="MS">Mississippi</option>
+												<option value="MO">Missouri</option>
+												<option value="MT">Montana</option>
+												<option value="NE">Nebraska</option>
+												<option value="NV">Nevada</option>
+												<option value="NH">New Hampshire</option>
+												<option value="NJ">New Jersey</option>
+												<option value="NM">New Mexico</option>
+												<option value="NY">New York</option>
+												<option value="NC">North Carolina</option>
+												<option value="ND">North Dakota</option>
+												<option value="OH">Ohio</option>
+												<option value="OK">Oklahoma</option>
+												<option value="OR">Oregon</option>
+												<option value="PA">Pennsylvania</option>
+												<option value="RI">Rhode Island</option>
+												<option value="SC">South Carolina</option>
+												<option value="SD">South Dakota</option>
+												<option value="TN">Tennessee</option>
+												<option value="TX" selected="selected">Texas</option>
+												<option value="UT">Utah</option>
+												<option value="VT">Vermont</option>
+												<option value="VA">Virginia</option>
+												<option value="WA">Washington</option>
+												<option value="WV">West Virginia</option>
+												<option value="WI">Wisconsin</option>
+												<option value="WY">Wyoming</option>
+											</select>											
+										</td>
+									</tr>
+									<tr>
+										<td class="left_td">Telephone</td>
+										<td><input type="text" name="bill_phone" tabindex="28"  /></td>
+										<td class="left_td">Zip Code</td>
+										<td><input type="text" name="bill_zip" tabindex="33"  /></td>
+											
+									</tr>
+									<tr>
+										<td class="left_td">Date of Loss</td>
+										<td><input type="text" name="bill_loss" class="datepicker" tabindex="29" /></td>
+										<td>Claim No</td>
+										<td><input type="text" name="billing_claim_no" tabindex="34" /></td>
+									</tr>
+									<tr>
+										<td>Client File No</td>
+										<td><input type="text" name="client_file_no" tabindex="34" /></td>
+									</tr>
+								</table>
+							</div>
+							<div id="attorneys">
+								<div class="form_area">
+									<h5>Other Attorneys of Record</h5>
+									<table>
+										<tr>
+											<td class="left_td">Attorney</td>
+											<td><input type="hidden" name="other_attorney[]" class="div_row" value="1" /><input type="text" name="other_attorney[]" tabindex="35" /></td>
+											<td class="left_td">Telephone</td>
+											<td><input type="text" name="other_attorney[]" tabindex="39" /></td>
+										</tr>
+										<tr>
+											<td class="left_td">Firm</td>
+											<td><input type="text" name="other_attorney[]" tabindex="36" /></td>
+											<td class="left_td">Fax</td>
+											<td><input type="text" name="other_attorney[]" tabindex="40" /></td>
+										</tr>
+										<tr>
+											<td class="left_td">Address</td>
+											<td><input type="text" name="other_attorney[]" tabindex="37" /></td>
+											<td class="left_td">Representing</td>
+											<td><input type="text" name="other_attorney[]" tabindex="41" /></td>
+										</tr>
+										<tr>
+											<td class="left_td">Email</td>
+											<td><input type="text" name="other_attorney[]" tabindex="38" /></td>
+											<td class="left_td">&nbsp;</td>
+											<td><input type="hidden" name="other_attorney[]" value=" " /></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<p><a href="#" id="another_attorney"><img src="/images/site/btn_add_attorneys.png" alt="Plus" /></a></p>
+							<div class="form_area">
+								<h5>Record Information</h5>
+								<div id="record_form_left">
+									<table>
+										<tr>
+											<td class="left_td">Records Pertaining to</td>
+											<td><input type="text" name="records_pertaining" tabindex="42" /></td>
+										</tr>
+										<tr>
+											<td class="left_td">Date of Birth</td>
+											<td><input type="text" name="birth" tabindex="43" /></td>
+										</tr>
+										<tr>
+											<td class="left_td">Social Security # (only last 4 digits)</td>
+											<td><input type="text" name="social_security" tabindex="44" /></td>
+										</tr>
+										<tr>
+											<td class="left_td">Any Alias</td>
+											<td><input type="text" name="alias" tabindex="45" /></td>
+										</tr>
+									</table>
+								</div>
+								<div id="record_form_right">
+									<p style="margin-bottom: 0;">Type of Record Requested</p>
+									<ul>
+										<li><label><input type="checkbox" class="checkbox" name="type_request[]" value="Medical" tabindex="46" /> Medical</label></li>
+										<li><label><input type="checkbox" class="checkbox" name="type_request[]" value="Employment" tabindex="47" /> Employment</label></li>
+										<li><label><input type="checkbox" class="checkbox" name="type_request[]" value="X-Rays" tabindex="48" /> X-Rays</label></li>
+										<li><label><input type="checkbox" class="checkbox" name="type_request[]" value="Payroll" tabindex="49" /> Payroll</label></li>
+										<li><label><input type="checkbox" class="checkbox" name="type_request[]" value="Billing" tabindex="50" /> Billing</label></li>
+										<li><label><input type="checkbox" class="checkbox" name="type_request[]" value="Personnel" tabindex="51" /> Personnel</label></li>
+										<li><label><input type="checkbox" class="checkbox" name="type_request[]" value="Admissible" tabindex="52" /> Admissible</label></li>
+										<li><label><input type="checkbox" class="checkbox" name="type_request[]" value="Non-Admissible" tabindex="53" /> Non-Admissible</label></li>
+										<li><label><input type="checkbox" class="checkbox" name="type_request[]" value="Authorization" tabindex="54" /> Authorization</label></li>
+										<li><label><input type="checkbox" class="checkbox" name="type_request[]" value="Other" id="other_type" tabindex="55" /> Other</li>
+										<li style="margin-left: 120px; display: none;"><input type="text" name="type_request[]" tabindex="56"  /></li>
+									</ul>
+									<table style="width: 100%;">
+										<tr>
+											<td style="width: 110px;">Date Range of Records requested</td>
+											<td style="width: 50px;"><input type="text" name="date_range_from" style="width: 50px;" class="datepicker" tabindex="57" /></td>
+											<td style="width: 10px;">to</td>
+											<td style="width: 50px;"><input type="text" name="date_range_to" style="width: 50px;" class="datepicker" tabindex="58" /></td>
+										</tr>
+									</table>
+								</div>
+								<br class="clear">								
+							</div>
+							<div class="form_area">
+								<h5>Custodians</h5>
+								<table id="custodian_table">
+									<tr>
+										<td>Custodians</td>
+										<td>Location</td>
+										<td>Telephone/Fax Number</td>
+									</tr>
+									<tr>
+										<td><input type="hidden" name="custodians[]" class="tr_row" value="1" /><input type="text" name="custodians[]" tabindex="59" /></td>
+										<td><input type="text" name="custodians[]" tabindex="60" /></td>
+										<td><input type="text" name="custodians[]" tabindex="61" /><input type="hidden" name="custodians[]" value=" " /></td>
+									</tr>
+								</table>
+								<p><a href="#" id="another_custodian"><img src="/images/site/btn_add_custodians.png" alt="Plus"/></a></p>
+							</div>
+							
+							<div class="form_area">
+								<h5 style="margin-bottom: 10px;">Attach Documents</h5>
+								<div id="file_uploads">
+									<input type="file" name="file_uploads[0]" value="" id="freeform_file_uploads0"  /><br/><input type="file" name="file_uploads[1]" value="" id="freeform_file_uploads1"  /><br/><input type="file" name="file_uploads[2]" value="" id="freeform_file_uploads2"  /><br/><input type="file" name="file_uploads[3]" value="" id="freeform_file_uploads3"  /><br/><input type="file" name="file_uploads[4]" value="" id="freeform_file_uploads4"  />
+								</div>
+							</div>
+							<div class="form_area">
+								    								<p>
+        								Please enter the word you see in the image below:<br />
+						   	     		<img src="http://www.lorr.com/images/captchas/1492676224.5061.jpg" width="140" height="30" style="border:0;" alt=" " />
+								</p>
+						 		<p><input type="text" name="captcha" /></p>
+															</div>
+							<p><input type="submit" value="" class="submit" tabindex="62" /> <input type="reset" value="" class="reset" /></p>
+						</form>
+					</div>
+				</div>
+				<div id="secondary_content">
+					<h2 style="padding-left: 20px;">Services</h2>
+					<ul>
+						
+						<li><a href="http://www.lorr.com/services/record-retrieval-services">Record Retrieval Services</a></li>
+						
+						<li><a href="http://www.lorr.com/services/online-repository">Online Repository - Texas Legal Repository</a></li>
+						
+						<li><a href="http://www.lorr.com/services/legal-videographers-and-photography">Legal Videographers and Photography</a></li>
+						
+						<li><a href="http://www.lorr.com/services/legal-presentations-and-exhibits">Legal Presentations and Exhibits</a></li>
+						
+						<li><a href="http://www.lorr.com/services/citation-and-subpoena-services">Citation and Subpoena Services</a></li>
+						
+					</ul>
+					                	 
+					 <img src="/images/site/btn_form.png" alt="Record Retrieval Form">
+				</div>	
+				
+				<br class="clear" />
+			</div>
+			<div id="push"></div>
+		</div>
+		<div id="footer_wrapper">
+	<div id="footer">
+		<div id="footer_affiliations">
+			<p>
+				<img src="/images/site/ftr_affil.png" alt="Affiliations" style="margin-right: 50px;" />
+				<a href=""><img src="/images/site/ftr_logo_1.png" alt="" /></a>
+				<a href=""><img src="/images/site/ftr_logo_2.png" alt="" /></a>
+				<a href=""><img src="/images/site/ftr_logo_3.png" alt="" /></a>
+				<a href=""><img src="/images/site/ftr_logo_4.png" alt="" /></a>
+				<a href=""><img src="/images/site/ftr_logo_5.png" alt="" /></a>
+				<a href=""><img src="/images/site/ftr_logo_6.png" alt="" /></a>
+			</p>
+		</div>
+		<div id="footer_quick_links">
+			<h3>Quick Links</h3>
+			<ul>
+				<li><a href="http://www.lorr.com/">Home</a></li>
+				<li><a href="/the-company/">Company</a></li>
+				<li><a href="/legal-support-news/">News</a></li>
+				<li><a href="/contact/">Contact</a></li>
+			</ul>
+		</div>
+		<div id="footer_services">
+			<h3>Services</h3>
+			<ul>
+				<li><a href="/services/record-retrieval/">Record Retrieval</a></li>
+				<li><a href="/services/process-services/">Process Service</a></li>
+				<li><a href="/services/videography-and-photography/">Videography &amp; Photography</a></li>
+				<li><a href="/services/presentations-and-exhibits/">Presentations &amp; Exhibitions</a></li>
+				<li><a href="/services/online-repository/">Online Repository</a></li>
+			</ul>
+		</div>
+		<div id="footer_resources">
+			<h3>Resources</h3>
+			<ul>
+				<li><a href="/resources/texas/">Texas</a></li>
+				<li><a href="/resources/federal/">Federal</a></li>
+				<li><a href="/resources/forms/">Forms</a></li>
+				<li><a href="/resources/professional-boards/">Professional Boards</a></li>
+				<li><a href="/resources/travel/">Travel</a></li>
+			</ul>
+		</div>
+		
+		<div id="footer_connect">
+			<p>
+				<img src="/images/site/sm_connect.png" alt="Connect" style="margin-right: 10px;" />
+				<a href="http://www.facebook.com/pages/Law-Order-Record-Retrieval/221136997981840" onclick="window.open (this.href); return false;"><img src="/images/site/sm_fb.jpg" alt="Facebook" /></a>
+				<a href=" http://www.linkedin.com/pub/deborah-wilson/11/283/67b" onclick="window.open (this.href); return false;"><img src="/images/site/sm_linkdin.jpg" alt="LinkedIn" /></a>
+				<a href="https://twitter.com/LORRtx" onclick="window.open (this.href); return false;"><img src="/images/site/sm_twitter.jpg" alt="Twitter" /></a>
+				<a href=" http://www.youtube.com/channel/UCi18ILCTfxsVOzgBxWf8DsQ?feature=mhee" onclick="window.open (this.href); return false;"><img src="/images/site/sm_youtube.jpg" alt="Youtube" /></a>
+				<a href="https://plus.google.com/108674855023867105115/" onclick="window.open (this.href); return false;"rel="publisher"><img src="/images/site/sm_google.jpg" alt="Youtube" /></a>
+			</p>
+			
+	</div>
+		<div id="footer_updates">
+			<h3>Sign Up For Updates</h3>
+			<form action="http://email.gpeflow.com/t/r/s/tkzdrd/" method="post">
+				<p><input type="text" name="email" placeholder="email address" /></p>
+				<p><input type="submit" class="submit" value="" />	</p>
+			</form>
+		</div>
+		<div id="copyright">
+<p>Copyright 2017. Law &amp; Order Record Retrieval. Web Design by<a href="http://www.parscale.com" style="color:#ECC76C;" title="San Antonio Web Designer" onclick="window.open (this.href); return false;"> Giles-Parscale Inc.</a>
+	   </div>
+	</div>
+</div>
+	</body>
+</html>

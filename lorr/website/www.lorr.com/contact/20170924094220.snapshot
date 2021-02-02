@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Contact</title>
+<meta name='keywords' content='Law &amp; Order Record Retrieval and Online Repository' />
+<meta name='description' content='Law &amp; Order Record Retrieval and Online Repository. 503 E. Ramsey, Suite 201
+San Antonio, Texas 78216. (210) 366-0800. ' />
+<link rel='canonical' href='http://www.lorr.com/contact' />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Francois+One|Open+Sans+Condensed:700' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="http://www.lorr.com/?css=includes/screen.v.1503076061" type="text/css" />
+<link rel="stylesheet" href="http://www.lorr.com/?css=includes/responsive-screen.v.1495229964" type="text/css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/js/jquery.cycle.min.js"></script>  
+<script src="/js/mobile-nav-script.js"></script>  
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34252874-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+	<script src="/js/jquery.validate.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.phone_number label').remove();
+			$(document).on('submit','form#contact' , function(){
+                if ($(this).valid()) {
+                    return true;
+                } else {
+                    return false;
+                }
+            });
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="one-edge-shadow" id="header_wrapper">
+	<div id="header">
+		<div id="header_logo">
+			<a href="http://www.lorr.com/"><img src="/images/site/header_logo.png" alt="Law &amp; Order Records and Support" /></a>
+		</div>
+		<div id="header_repository">
+			<a href="http://www.lorr.com/services/record-retrieval-order-form"><img src="/images/site/btn_recordretrieval.png" alt="Record Retrieval" /></a>
+			<a href="https://lorr.egnyte.com/" onclick="window.open (this.href); return false;"><img src="/images/site/header_btn.png" alt="Online Repository" /></a>
+		</div>
+		<div id="header_contact">
+		<p>	Tel: <a href="tel:8007369105" style="color:#736A5D;">(800) 736-9105</a>  Fax: (800) 335-4002 </p><!-- <a href="tel:8007369105"><img src="/images/site/header_ph_number.png" alt="1-800-736-9105" /></a> -->
+		</div>
+		<div id="navigation">
+			<ul>
+				<li><a href="/the-company" id="nav1">The Company</a></li>
+				<li><a href="/services" id="nav2">Services</a></li>
+				<li><a href="/resources" id="nav3">Resources</a></li>
+				<li><a href="/legal-support-news" id="nav4">News</a></li>
+				<li><a href="/contact" id="nav5" class="active">Contact</a></li>
+			</ul>
+		</div>
+		<div class="nav-mobile">
+		    <a class="btn-nav" href="javascript:;"><span></span></a>
+		    <div class="nav-mobile-content">
+		        <ul>
+		            <li><a href="/the-company" >The Company</a></li>
+		            <li><a href="/services" >Services</a></li>
+		            <li><a href="/resources" >Resources</a></li>
+		            <li><a href="/legal-support-news" >News</a></li>
+		            <li><a href="/contact"  class="active">Contact</a></li>
+		            <li><a href="http://www.lorr.com/services/record-retrieval-order-form" >Record Retrieval Order Form</a></li>
+		            <li><a href="https://lorr.egnyte.com/" onclick="window.open (this.href); return false;">Online Repository</a></li>
+		        </ul>
+		    </div>
+		</div>
+	</div>
+</div>
+<div id="header_shadow">
+	
+</div>
+	
+		<div id="content">
+			<div id="main_content">
+				<h1>Contact</h1>
+				<div id="main_contact"> 
+					
+					<p style="margin:10px;" >E-mail your LORR representative directly, or you can email your request to the specific departments:</p>
+					<script type="text/javascript" src="//www.lorr.com/themes/user/forms/legacy/forms_base.js"></script><form id="contact" class=" contact" method="post" action=" "  enctype="multipart/form-data" >
+<div class='hiddenFields'>
+<input type="hidden" name="ACT" value="49" />
+<input type="hidden" name="FDATA" value="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" />
+<input type="hidden" name="site_id" value="1" />
+<input type="hidden" name="csrf_token" value="9ac3347b4563a64b7e55293e29b622e218f9a691" />
+</div>
+
+<div class="dform"><div class="dform_element dform_text_input dfleft_label field_name dform_required" id="forms_field_1" style=""><label class="dform_label" for="ddform_1">name <span class="req">*</span></label><div class="dform_container"><input type="text" name="fields[1]" value="" class="text required validate[required] " id="ddform_1" placeholder="" data-placeholder=""  /></div><br clear="all"></div><div class="dform_element dform_email dfleft_label field_email dform_required" id="forms_field_2" style=""><label class="dform_label" for="ddform_2">email address <span class="req">*</span></label><div class="dform_container"><input type="email" name="fields[2]" value="" class="text  required validate[required,custom[email]] " id="ddform_2" placeholder="" data-placeholder=""  /></div><br clear="all"></div><div class="dform_element dform_phone dfleft_label field_phone " id="forms_field_3" style=""><label class="dform_label" for="ddform_3">phone number</label><div class="dform_container"><div class="dfinput_phones"><div class="dfinput_left phone_number"><input type="tel" name="fields[3][phone_number]" value="" class="text" id="ddform_3_number"  /><label for="ddform_3_number">Phone Number</label></div><br clear="all"></div></div><br clear="all"></div><div class="dform_element dform_text_input dfleft_label field_subject " id="forms_field_4" style=""><label class="dform_label" for="ddform_4">subject</label><div class="dform_container"><input type="text" name="fields[4]" value="" class="text " id="ddform_4" placeholder="" data-placeholder=""  /></div><br clear="all"></div><div class="dform_element dform_textarea dfleft_label field_comment " id="forms_field_5" style=""><label class="dform_label" for="ddform_5">comment</label><div class="dform_container"><textarea name="fields[5]" cols="50" rows="4" class="" id="ddform_5" placeholder="" data-placeholder="" ></textarea></div><br clear="all"></div><div class="dform_element submit_button"> <div class="dform_container"><div class="dfinput_full"><input type="submit" class="submit" name="submit_button" value="send" data-value="send" data-wait="Verifying..."/></div></div></div></div></form>
+					
+				</div>	
+			</div>
+			<div id="secondary_content" class="contact-content">
+				<div id="sc_contact">
+					<h3 style="padding-left: 20px;">Contact Information</h3>
+					<br/>
+					<h5>San Antonio office</h5>
+					<p>11815 Warfield St.</br>
+						San Antonio, Texas 78216</br>
+						(210) 366-0800</br>
+						Fax: (210) 366-0844</br>
+						<a href="https://www.google.com/maps/place/11815+Warfield+St,+San+Antonio,+TX+78216/@29.5498975,-98.4976312,17z/data=!3m1!4b1!4m5!3m4!1s0x865c603acb8f40ab:0xcfafd15c295a02ff!8m2!3d29.5498975!4d-98.4954425" target="_blank"><b>MAP &amp; DIRECTIONS</b></a><p>
+						<br/>
+						<h5>Dallas-Fort Worth office</h5>
+					<p>(800) 736-9105</br>
+						Fax: (800) 335-4002</br>
+					<p>
+						<br/>
+						<h5>Houston office</h5>
+					<p>(800) 736-9105</br>
+						Fax: (800) 335-4002</br>
+					</p>
+                    <br/>
+					<h5>Austin, Corpus Christi, and The Valley</h5>
+					<p>Production is handled out of our San Antonio office.</p>
+					<br/>
+					<p>                  
+						<iframe width="280" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3470.8487924006095!2d-98.49763118489645!3d29.549897482064907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c603acb8f40ab%3A0xcfafd15c295a02ff!2s11815+Warfield+St%2C+San+Antonio%2C+TX+78216!5e0!3m2!1sen!2sus!4v1489765692664"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=503+E+Ramsey,+Suite+201,+San+Antonio,+TX+78216&amp;aq=&amp;sll=29.527958,-98.488159&amp;sspn=0.009559,0.01869&amp;gl=us&amp;ie=UTF8&amp;hq=&amp;hnear=503+E+Ramsey+Rd,+San+Antonio,+Texas+78216&amp;t=m&amp;ll=29.527986,-98.48814&amp;spn=0.017924,0.023947&amp;z=14&amp;iwloc=A" style="color:#E9A14C;text-align:left"><b>View Larger Map</b></a></small>
+					</p>  
+				</div>
+				
+			</div>
+			<br class="clear" />
+		</div>
+		<div id="push"></div>
+	</div>
+	<div id="footer_wrapper">
+	<div id="footer">
+		<div id="footer_affiliations">
+			<p>
+				<img src="/images/site/ftr_affil.png" alt="Affiliations" style="margin-right: 50px;" />
+				<a href=""><img src="/images/site/ftr_logo_1.png" alt="" /></a>
+				<a href=""><img src="/images/site/ftr_logo_2.png" alt="" /></a>
+				<a href=""><img src="/images/site/ftr_logo_3.png" alt="" /></a>
+				<a href=""><img src="/images/site/ftr_logo_4.png" alt="" /></a>
+				<a href=""><img src="/images/site/ftr_logo_5.png" alt="" /></a>
+				<a href=""><img src="/images/site/ftr_logo_6.png" alt="" /></a>
+			</p>
+		</div>
+		<div id="footer_quick_links">
+			<h3>Quick Links</h3>
+			<ul>
+				<li><a href="http://www.lorr.com/">Home</a></li>
+				<li><a href="/the-company/">Company</a></li>
+				<li><a href="/legal-support-news/">News</a></li>
+				<li><a href="/contact/">Contact</a></li>
+			</ul>
+		</div>
+		<div id="footer_services">
+			<h3>Services</h3>
+			<ul>
+				<li><a href="/services/record-retrieval/">Record Retrieval</a></li>
+				<li><a href="/services/process-services/">Process Service</a></li>
+				<li><a href="/services/videography-and-photography/">Videography &amp; Photography</a></li>
+				<li><a href="/services/presentations-and-exhibits/">Presentations &amp; Exhibitions</a></li>
+				<li><a href="/services/online-repository/">Online Repository</a></li>
+			</ul>
+		</div>
+		<div id="footer_resources">
+			<h3>Resources</h3>
+			<ul>
+				<li><a href="/resources/texas/">Texas</a></li>
+				<li><a href="/resources/federal/">Federal</a></li>
+				<li><a href="/resources/forms/">Forms</a></li>
+				<li><a href="/resources/professional-boards/">Professional Boards</a></li>
+				<li><a href="/resources/travel/">Travel</a></li>
+			</ul>
+		</div>
+		
+		<div id="footer_connect">
+			<p>
+				<img src="/images/site/sm_connect.png" alt="Connect" style="margin-right: 10px;" />
+				<a href="http://www.facebook.com/pages/Law-Order-Record-Retrieval/221136997981840" onclick="window.open (this.href); return false;"><img src="/images/site/sm_fb.jpg" alt="Facebook" /></a>
+				<a href=" http://www.linkedin.com/pub/deborah-wilson/11/283/67b" onclick="window.open (this.href); return false;"><img src="/images/site/sm_linkdin.jpg" alt="LinkedIn" /></a>
+				<a href="https://twitter.com/LORRtx" onclick="window.open (this.href); return false;"><img src="/images/site/sm_twitter.jpg" alt="Twitter" /></a>
+				<a href=" http://www.youtube.com/channel/UCi18ILCTfxsVOzgBxWf8DsQ?feature=mhee" onclick="window.open (this.href); return false;"><img src="/images/site/sm_youtube.jpg" alt="Youtube" /></a>
+				<a href="https://plus.google.com/108674855023867105115/" onclick="window.open (this.href); return false;"rel="publisher"><img src="/images/site/sm_google.jpg" alt="Youtube" /></a>
+			</p>
+			
+	</div>
+		<div id="footer_updates">
+			<h3>Sign Up For Updates</h3>
+			<form action="http://email.gpeflow.com/t/r/s/tkzdrd/" method="post">
+				<p><input type="text" name="email" placeholder="email address" /></p>
+				<p><input type="submit" class="submit" value="" />	</p>
+			</form>
+		</div>
+		<div id="copyright">
+<p>Copyright 2017. Law &amp; Order Record Retrieval. Web Design by<a href="http://www.parscale.com" style="color:#ECC76C;" title="San Antonio Web Designer" onclick="window.open (this.href); return false;"> Giles-Parscale Inc.</a>
+	   </div>
+	</div>
+</div>
+</body>
+</html>
